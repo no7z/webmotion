@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "template": "prerendered-spatial-document",
+  "experienceSpec": "E10",
+  "identity": {
+    "category": "prerendered-spatial-media-document",
+    "informationGoal": "Deliver reliable spatial storytelling when realtime interaction adds cost but no additional information value.",
+    "composition": "Large typographic cover, one pre-rendered hero plate, text spread, two spatial detail plates, operations copy, and technical record follow normal document flow.",
+    "interaction": "Native document scrolling and ordinary image loading only. Media can be replaced by video, image sequences, or responsive pictures without a realtime scene.",
+    "semantic3d": "Pre-rendered plates communicate infrastructure scale, sectional organization, and material detail while DOM content carries claims and specifications."
+  },
+  "invariants": [
+    "No WebGL canvas or realtime scene runtime is included.",
+    "Every spatial plate has descriptive alternative text and a caption.",
+    "The document remains understandable if media fails to load.",
+    "Media does not capture wheel, touch, or keyboard input.",
+    "Mobile uses responsive crops and serialized copy.",
+    "Reduced motion removes optional playback while preserving still plates."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02"
+    ],
+    "selectionItems": [
+      "CAPACITY",
+      "MODULES",
+      "UPTIME",
+      "WATER"
+    ]
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Native document scroll only.",
+    "touch": "Native touch document flow only.",
+    "keyboard": "Standard document navigation.",
+    "pointer": "Optional playback controls for replaceable video slots."
+  },
+  "responsive": {
+    "desktop": "Full-width plates alternate with asymmetric editorial spreads.",
+    "mobile": "Plates use authored responsive crops and all spreads serialize."
+  },
+  "reducedMotion": {
+    "behavior": "Keep still spatial plates and disable optional playback.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

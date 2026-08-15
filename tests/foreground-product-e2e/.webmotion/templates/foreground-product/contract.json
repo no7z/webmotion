@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "template": "foreground-product",
+  "identity": {
+    "category": "guided-spatial-journey",
+    "informationGoal": "Explain one product through a sequence of readable editorial chapters.",
+    "composition": "A persistent product subject occupies the foreground while chapter-specific image, color, type, and detail layers move behind and around it.",
+    "interaction": "Vertical wheel or touch scroll advances a continuous normalized story state. Chapters are state ranges, not isolated pages.",
+    "semantic3d": "Model rotation, scale, material emphasis, and camera distance reveal the feature discussed by the active chapter."
+  },
+  "invariants": [
+    "The product subject remains visually in front of chapter backgrounds until the contract-defined footer exit.",
+    "The subject follows a continuous path across chapter boundaries without teleporting.",
+    "Each major 3D state change corresponds to a content claim.",
+    "Primary copy remains readable and is never accidentally crossed by the subject.",
+    "Mobile uses its own composition and trajectory rather than scaling desktop coordinates.",
+    "The document remains navigable and understandable with reduced motion enabled."
+  ],
+  "stateModel": {
+    "progress": "A clamped value from 0 to 1 derived from document scroll progress.",
+    "chapters": "Ordered, non-overlapping progress ranges with optional blend windows.",
+    "interpolation": ["position", "rotation", "scale", "camera", "lighting", "material", "contentOpacity"],
+    "restore": "Refreshing or resizing at mid-page reconstructs the same semantic chapter and visual state."
+  },
+  "layers": [
+    { "id": "background", "role": "chapter color, image, or video atmosphere", "depth": 0 },
+    { "id": "editorial", "role": "headings, body copy, facts, and controls", "depth": 20 },
+    { "id": "subject", "role": "persistent WebGL or composited product", "depth": 40 },
+    { "id": "utility", "role": "navigation, progress, language, and accessibility controls", "depth": 60 }
+  ],
+  "occlusion": {
+    "strategy": "Each chapter declares protected copy zones and allowed subject zones for desktop and mobile.",
+    "failure": "A required heading, paragraph, control, or the semantic product feature becomes unreadable or invisible."
+  },
+  "inputs": {
+    "wheel": "Maps document scroll to continuous progress; no synthetic horizontal wheel capture.",
+    "touch": "Uses native vertical page scrolling with momentum.",
+    "pointer": "May add bounded parallax but cannot alter the semantic chapter.",
+    "keyboard": "Native page navigation remains functional."
+  },
+  "responsive": {
+    "desktop": "Product may cross the center line and overlap decorative type while respecting protected copy zones.",
+    "mobile": "Product scale and path are reduced, copy order is linearized, and essential content is never placed behind WebGL.",
+    "breakpointPolicy": "Interpolate within a layout mode; switch to separately authored states between modes."
+  },
+  "reducedMotion": {
+    "behavior": "Replace continuous travel with stable chapter poses and short opacity transitions or a static representative image.",
+    "required": "All copy, controls, and product explanations remain available."
+  },
+  "exit": {
+    "footerStart": 0.94,
+    "behavior": "Only after footerStart may the subject fade or move behind the final surface."
+  }
+}
+

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "template": "system-morph",
+  "experienceSpec": "E01",
+  "identity": {
+    "category": "continuous-composition-morph",
+    "informationGoal": "Explain how one product, material, or idea expands into a complete system without replacing the visual subject between chapters.",
+    "composition": "A full-viewport persistent subject transforms from a single object into a spatial sample field; the immersive stage then ends and releases a stable technical ledger.",
+    "interaction": "Native vertical document progress continuously controls subject scale, density, distribution, and camera distance. Reverse scrolling restores every intermediate composition.",
+    "semantic3d": "The spatial multiplication shows how one unit becomes a family of modules and which properties remain shared."
+  },
+  "invariants": [
+    "One visual subject remains identifiable from the first frame through the distributed system state.",
+    "Composition parameters interpolate continuously and reversibly.",
+    "The immersive stage has an explicit release into ordinary information.",
+    "Each of the three states produces a distinct information result.",
+    "Mobile serializes the sample field without hiding content.",
+    "Reduced motion exposes three stable poses and the full ledger."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02",
+      "03"
+    ],
+    "selectionItems": [
+      "DENSITY",
+      "RECOVERY",
+      "MODULES"
+    ]
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Native document scroll maps to continuous composition progress.",
+    "touch": "Native vertical touch momentum advances the same continuous state.",
+    "keyboard": "Page navigation remains native.",
+    "pointer": "Optional bounded lighting response only."
+  },
+  "responsive": {
+    "desktop": "Wide sample field with copy placed in protected right-side zones.",
+    "mobile": "Subject stays above a serialized copy stack and the system grid uses a tighter authored spread."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "template": "foreground-product",
+  "requiredGates": [
+    {
+      "id": "foreground-persistence",
+      "question": "Does the product remain above chapter backgrounds until the footer exit?",
+      "test": "Scrub forward and backward through 0-94% progress at desktop and mobile viewports."
+    },
+    {
+      "id": "trajectory-continuity",
+      "question": "Does the subject move continuously between all chapter states?",
+      "test": "Cross every chapter boundary slowly, quickly, and in reverse."
+    },
+    {
+      "id": "semantic-state",
+      "question": "Does every major 3D state explain the active content?",
+      "test": "Map each distinct pose, material, or camera change to the chapter claim."
+    },
+    {
+      "id": "protected-copy",
+      "question": "Are required copy and controls unobstructed throughout transitions?",
+      "test": "Inspect declared protected zones at 1440x900, 1280x720, 390x844, and 360x800."
+    },
+    {
+      "id": "mobile-recomposition",
+      "question": "Is mobile independently composed rather than scaled from desktop?",
+      "test": "Compare reading order, subject path, scale, and protected zones between modes."
+    },
+    {
+      "id": "reduced-motion",
+      "question": "Is all information usable with reduced motion enabled?",
+      "test": "Enable prefers-reduced-motion and traverse the complete document."
+    }
+  ],
+  "runtime": [
+    "No console errors or missing assets.",
+    "No background flash or stale frame at chapter boundaries.",
+    "No sustained scroll jank on the target device class.",
+    "Refresh and resize preserve the semantic chapter.",
+    "Native keyboard and touch scrolling remain functional."
+  ]
+}
+

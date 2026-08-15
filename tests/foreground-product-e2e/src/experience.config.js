@@ -1,0 +1,116 @@
+export const experience = {
+  brand: "ÉCLAT 07",
+  template: "foreground-product",
+  version: "0.1.0",
+  availability: "contract-only",
+  copy: {
+    zh: {
+      nav: ["序章", "香调", "结构", "余韵"],
+      scroll: "向下探索",
+      chapters: [
+        {
+          eyebrow: "01 / 夜色开场",
+          heading: "让光，\n拥有气味。",
+          body: "ÉCLAT 07 是一支虚构的夜间香氛。透明瓶身封存紫罗兰色光泽，第一缕气息从冷冽佛手柑开始。",
+          fact: "冷香 · 50ml",
+          word: "LUMIÈRE",
+        },
+        {
+          eyebrow: "02 / 第一层",
+          heading: "明亮并不\n意味着轻薄。",
+          body: "滚动让瓶身转向棱面，模拟前调被打开的瞬间。香柠檬、杜松与雨后空气构成清晰的第一印象。",
+          fact: "TOP / 0—15 MIN",
+          word: "ÉCLAT",
+        },
+        {
+          eyebrow: "03 / 核心结构",
+          heading: "温度从内部\n缓慢升起。",
+          body: "模型靠近镜头，琥珀色液体成为视觉核心。鸢尾、黑茶与雪松把明亮的开场收束成温暖轮廓。",
+          fact: "HEART / 2—5 H",
+          word: "MATIÈRE",
+        },
+        {
+          eyebrow: "04 / 最后余韵",
+          heading: "留下的不是\n重量，是轨迹。",
+          body: "最后一次旋转露出瓶底与暗色边缘。白麝香、香根草和矿物气息停留在皮肤上，像一束逐渐变暗的光。",
+          fact: "BASE / 8 H+",
+          word: "TRACE",
+        },
+      ],
+      footerTitle: "一支不存在的香，\n一次真实的模板测试。",
+      footerBody: "该页面没有使用第三方品牌素材。所有文字、构图与程序化瓶身均为 WebMotion 端到端测试而创建。",
+    },
+    en: {
+      nav: ["Prelude", "Notes", "Structure", "Trace"],
+      scroll: "Scroll to explore",
+      chapters: [
+        {
+          eyebrow: "01 / AFTER DARK",
+          heading: "Give light\na scent.",
+          body: "ÉCLAT 07 is a fictional nocturnal fragrance. A violet glow rests inside clear glass as the first breath opens on cold bergamot.",
+          fact: "COOL EXTRAIT · 50ML",
+          word: "LUMIÈRE",
+        },
+        {
+          eyebrow: "02 / THE OPENING",
+          heading: "Brightness\nwith a backbone.",
+          body: "Scroll turns the bottle toward its cut edge, echoing the release of bergamot, juniper and the mineral clarity of air after rain.",
+          fact: "TOP / 0—15 MIN",
+          word: "ÉCLAT",
+        },
+        {
+          eyebrow: "03 / THE HEART",
+          heading: "Warmth rises\nfrom within.",
+          body: "The bottle moves closer and the amber core takes over. Iris, black tea and cedar shape a warm architecture beneath the bright opening.",
+          fact: "HEART / 2—5 H",
+          word: "MATIÈRE",
+        },
+        {
+          eyebrow: "04 / THE TRACE",
+          heading: "A trajectory,\nnot a weight.",
+          body: "A final turn reveals the dark base. White musk, vetiver and mineral notes remain on skin like a beam of light slowly leaving the room.",
+          fact: "BASE / 8 H+",
+          word: "TRACE",
+        },
+      ],
+      footerTitle: "An imaginary scent.\nA real template test.",
+      footerBody: "No third-party brand assets were used. The copy, composition and procedural bottle were created for this WebMotion end-to-end test.",
+    },
+  },
+  chapters: [
+    { id: "prelude", start: 0, end: 0.24, protectedDesktop: "left", protectedMobile: "bottom" },
+    { id: "notes", start: 0.24, end: 0.49, protectedDesktop: "right", protectedMobile: "bottom" },
+    { id: "structure", start: 0.49, end: 0.72, protectedDesktop: "left", protectedMobile: "bottom" },
+    { id: "trace", start: 0.72, end: 0.94, protectedDesktop: "right", protectedMobile: "bottom" },
+  ],
+  scroll: {
+    smooth: {
+      lerp: 0.085,
+      wheelMultiplier: 0.9,
+    },
+    snap: {
+      distanceThreshold: "22%",
+      debounce: 180,
+      duration: 0.72,
+    },
+    navigationDuration: 0.9,
+  },
+  motion: {
+    desktop: [
+      { progress: 0, position: [1.02, -0.08, 0], rotation: [0.02, -0.35, -0.05], scale: 0.65 },
+      { progress: 0.24, position: [-1.02, 0, 0.08], rotation: [0.08, 0.78, 0.04], scale: 0.6 },
+      { progress: 0.49, position: [0.98, -0.08, 0.22], rotation: [-0.04, 2.12, -0.03], scale: 0.74 },
+      { progress: 0.72, position: [-1.06, 0, 0.08], rotation: [0.13, 3.55, 0.08], scale: 0.62 },
+      { progress: 0.94, position: [-2.25, 0.1, 0.12], rotation: [0, 4.8, 0], scale: 0.27 },
+      { progress: 1, position: [-2.25, 0.1, 0.12], rotation: [0, 5.1, 0], scale: 0.23 },
+    ],
+    mobile: [
+      { progress: 0, position: [0, 1.06, 0], rotation: [0.02, -0.28, 0], scale: 0.34 },
+      { progress: 0.24, position: [-0.04, 1.08, 0.08], rotation: [0.08, 0.8, 0.03], scale: 0.32 },
+      { progress: 0.49, position: [0.04, 1.02, 0.16], rotation: [-0.04, 2.18, -0.02], scale: 0.37 },
+      { progress: 0.72, position: [-0.06, 1.06, 0.08], rotation: [0.1, 3.6, 0.04], scale: 0.34 },
+      { progress: 0.94, position: [0, 0.36, 0.12], rotation: [0, 4.8, 0], scale: 0.14 },
+      { progress: 1, position: [0, 0.36, 0.12], rotation: [0, 5.1, 0], scale: 0.12 },
+    ],
+  },
+};

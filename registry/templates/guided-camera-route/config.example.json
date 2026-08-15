@@ -1,0 +1,70 @@
+{
+  "locale": {
+    "default": "zh",
+    "supported": [
+      "zh",
+      "en"
+    ]
+  },
+  "content": {
+    "hero": {
+      "zh": "镜头路线就是阅读顺序。",
+      "en": "The camera route is the reading order."
+    },
+    "intro": {
+      "zh": "每次停靠都交付可检索的信息；路线结束时，空间关系和事实证据同时成立。",
+      "en": "Every stop delivers searchable information; at arrival, spatial relationships and factual evidence agree."
+    },
+    "chapters": [
+      {
+        "id": "01",
+        "label": "ROOM",
+        "title": {
+          "zh": "先在房间尺度理解作品。",
+          "en": "Meet the work at room scale."
+        },
+        "body": {
+          "zh": "镜头交代距离、邻近物和仍未走完的路径。",
+          "en": "The camera establishes distance, neighbouring objects, and the route still ahead."
+        },
+        "metric": "4.8 s",
+        "view": "18 m"
+      },
+      {
+        "id": "02",
+        "label": "DETAIL",
+        "title": {
+          "zh": "靠近到足以阅读表面。",
+          "en": "Move close enough to read the surface."
+        },
+        "body": {
+          "zh": "第二停靠点只改变距离与角度，用细节解释制作方法。",
+          "en": "The second stop changes distance and angle to explain how the object was made."
+        },
+        "metric": "7.2 s",
+        "view": "0.8 m"
+      },
+      {
+        "id": "03",
+        "label": "RECORD",
+        "title": {
+          "zh": "最后停在可检索的证据。",
+          "en": "End on searchable evidence."
+        },
+        "body": {
+          "zh": "标题、材料、年份和结论回到普通 DOM 文本。",
+          "en": "Title, material, year, and conclusion return to ordinary DOM text."
+        },
+        "metric": "6.0 s",
+        "view": "2.4 m"
+      }
+    ],
+    "items": []
+  },
+  "assets": {},
+  "motion": {
+    "desktop": {},
+    "mobile": {},
+    "reduced": "stable-states"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "template": "spatial-editorial-journey",
+  "requiredGates": [
+    {
+      "id": "composition-sequence",
+      "question": "Are the source morph, horizontal traverse, archive, editorial index, particle field, geographic plate, and return compositions visibly distinct?",
+      "test": "Review the complete document at 1440x900 and 390x844; reject a generic repeated split-screen layout."
+    },
+    {
+      "id": "source-terrain-semantic",
+      "question": "Does the source image become the same semantic terrain rather than cross-fading to unrelated decoration?",
+      "test": "Scrub the source chapter slowly in both directions and compare texture, geometry, captions, and active copy."
+    },
+    {
+      "id": "source-traverse-boundary",
+      "question": "Do source end and traverse start share the exact camera position and look-at keyframe?",
+      "test": "Inspect the trajectory configuration, then cross the boundary slowly, quickly, in reverse, and with repeated direction changes on desktop and mobile."
+    },
+    {
+      "id": "horizontal-traverse",
+      "question": "Does vertical scrolling continuously advance the horizontal track and 3D camera through all traverse panels?",
+      "test": "Measure track translation at the start, quarter, half, three-quarter, and end states; reverse to the exact previous positions."
+    },
+    {
+      "id": "information-first",
+      "question": "Does the experience remain a readable editorial website rather than a game or isolated 3D viewer?",
+      "test": "Verify headings, copy, facts, route navigation, locale controls, and captions without requiring pointer manipulation."
+    },
+    {
+      "id": "protected-content",
+      "question": "Are required headings, paragraphs, facts, captions, and controls unobstructed throughout every transition?",
+      "test": "Inspect at 1440x900, 1280x720, 390x844, and 360x800, including intermediate transition frames."
+    },
+    {
+      "id": "mobile-recomposition",
+      "question": "Does mobile use its own camera boundary, reading order, media placement, and type scale?",
+      "test": "Compare desktop and mobile at the source-to-traverse boundary and at every chapter midpoint."
+    },
+    {
+      "id": "reduced-motion",
+      "question": "Is all content usable when continuous smoothing and decorative motion are disabled?",
+      "test": "Enable prefers-reduced-motion, traverse the document with keyboard and touch-equivalent input, and confirm every chapter remains available."
+    }
+  ],
+  "runtime": [
+    "No console errors, missing assets, background flashes, stale frames, or one-frame camera jumps.",
+    "No sustained jank while crossing the source-to-traverse boundary or traversing horizontally.",
+    "Only one smooth-scroll owner is active, and native keyboard and touch scrolling remain functional.",
+    "Refresh at mid-page and viewport resize preserve the semantic chapter.",
+    "Map open and close correctly lock and restore background scrolling and focus.",
+    "Asset-loading failure leaves readable editorial content and controls."
+  ],
+  "evidence": {
+    "requiredViewports": ["1440x900", "1280x720", "390x844", "360x800"],
+    "requiredDirections": ["forward", "reverse", "rapid-direction-change"],
+    "requiredBoundary": "source-to-horizontal-traverse",
+    "reportFields": ["buildIdentity", "browser", "viewport", "chapter", "result", "evidencePath", "retestStatus"]
+  }
+}

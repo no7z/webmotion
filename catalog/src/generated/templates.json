@@ -1,0 +1,1024 @@
+{
+  "schemaVersion": 1,
+  "registryVersion": "0.2.0",
+  "generatedAt": "2026-08-15T21:39:34.048Z",
+  "templates": [
+    {
+      "order": 1,
+      "id": "system-morph",
+      "experienceSpec": "E01",
+      "name": "System Morph",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "continuous-composition-morph",
+      "summary": "One persistent subject continuously unfolds into a distributed system before releasing an ordinary information document.",
+      "demo": {
+        "url": "http://localhost:4193/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/system-morph.webp",
+      "identity": {
+        "category": "continuous-composition-morph",
+        "informationGoal": "Explain how one product, material, or idea expands into a complete system without replacing the visual subject between chapters.",
+        "composition": "A full-viewport persistent subject transforms from a single object into a spatial sample field; the immersive stage then ends and releases a stable technical ledger.",
+        "interaction": "Native vertical document progress continuously controls subject scale, density, distribution, and camera distance. Reverse scrolling restores every intermediate composition.",
+        "semantic3d": "The spatial multiplication shows how one unit becomes a family of modules and which properties remain shared."
+      },
+      "invariants": [
+        "One visual subject remains identifiable from the first frame through the distributed system state.",
+        "Composition parameters interpolate continuously and reversibly.",
+        "The immersive stage has an explicit release into ordinary information.",
+        "Each of the three states produces a distinct information result.",
+        "Mobile serializes the sample field without hiding content.",
+        "Reduced motion exposes three stable poses and the full ledger."
+      ],
+      "capabilities": [
+        "continuous-composition-morph",
+        "persistent-semantic-subject",
+        "distributed-system-state",
+        "ordinary-document-release",
+        "reverse-scroll-restoration",
+        "mobile-serialization",
+        "reduced-motion-fallback"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "subject-material",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "module-colors",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "chapter-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "system-ledger",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "motion-keyframes",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 116665,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 system-morph 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 2,
+      "id": "foreground-product",
+      "experienceSpec": "E02",
+      "name": "Foreground Product Journey",
+      "version": "0.1.0",
+      "availability": "contract-only",
+      "category": "guided-spatial-journey",
+      "summary": "A scroll-led information page with a persistent foreground product crossing editorial chapters.",
+      "demo": {
+        "url": "http://localhost:4191/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/foreground-product.webp",
+      "identity": {
+        "category": "guided-spatial-journey",
+        "informationGoal": "Explain one product through a sequence of readable editorial chapters.",
+        "composition": "A persistent product subject occupies the foreground while chapter-specific image, color, type, and detail layers move behind and around it.",
+        "interaction": "Vertical wheel or touch scroll advances a continuous normalized story state. Chapters are state ranges, not isolated pages.",
+        "semantic3d": "Model rotation, scale, material emphasis, and camera distance reveal the feature discussed by the active chapter."
+      },
+      "invariants": [
+        "The product subject remains visually in front of chapter backgrounds until the contract-defined footer exit.",
+        "The subject follows a continuous path across chapter boundaries without teleporting.",
+        "Each major 3D state change corresponds to a content claim.",
+        "Primary copy remains readable and is never accidentally crossed by the subject.",
+        "Mobile uses its own composition and trajectory rather than scaling desktop coordinates.",
+        "The document remains navigable and understandable with reduced motion enabled."
+      ],
+      "capabilities": [
+        "continuous-scroll-state",
+        "foreground-persistent-subject",
+        "semantic-3d-chapters",
+        "protected-copy-zones",
+        "independent-mobile-trajectory",
+        "reduced-motion-fallback"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": false,
+          "note": "Planned; the v0 package contains the experience contract only."
+        },
+        {
+          "id": "vue-tresjs",
+          "available": false,
+          "note": "Planned."
+        },
+        {
+          "id": "vanilla-three",
+          "available": false,
+          "note": "Planned."
+        }
+      ],
+      "availableAdapters": [],
+      "assetSlots": [
+        {
+          "id": "product-model",
+          "type": "model/gltf-binary",
+          "required": true,
+          "distribution": "user-supplied"
+        },
+        {
+          "id": "product-poster",
+          "type": "image",
+          "required": true,
+          "distribution": "user-supplied"
+        },
+        {
+          "id": "chapter-media",
+          "type": "image-or-video",
+          "required": false,
+          "distribution": "user-supplied"
+        },
+        {
+          "id": "brand-fonts",
+          "type": "font",
+          "required": false,
+          "distribution": "user-supplied"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract"
+      },
+      "provenance": "Original framework-neutral contract authored for WebMotion; no third-party brand assets or implementation code included.",
+      "fileCount": 3,
+      "packageBytes": 8499,
+      "qaGateCount": 6,
+      "prompt": "使用 WebMotion 的 foreground-product 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 3,
+      "id": "fullscreen-state-machine",
+      "experienceSpec": "E03",
+      "name": "Fullscreen State Machine",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "internal-fullscreen-state-machine",
+      "summary": "An internal full-screen scroller advances a persistent instrument through three discrete states while the document itself stays fixed.",
+      "demo": {
+        "url": "http://localhost:4194/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/fullscreen-state-machine.webp",
+      "identity": {
+        "category": "internal-fullscreen-state-machine",
+        "informationGoal": "Turn wheel or touch input into a small number of explicit full-screen states when ordinary document displacement would weaken the story.",
+        "composition": "A fixed stage owns the viewport. One persistent object, one large copy block, a state rail, and an explicit exit change together at three discrete positions.",
+        "interaction": "The document remains fixed while a focusable internal scroller owns progress. State buttons can move between stops and the final state exposes an exit.",
+        "semantic3d": "Instrument orientation and highlighted strings explain tension, resonance, and release as named states."
+      },
+      "invariants": [
+        "The document does not move while the internal stage is active.",
+        "Exactly three named states remain reachable by wheel, touch, keyboard, and buttons.",
+        "Object and copy change as one state transaction.",
+        "The final state exposes an explicit exit from the internal scroller.",
+        "Internal scrolling never traps keyboard focus permanently.",
+        "Reduced motion uses direct state changes without continuous camera travel."
+      ],
+      "capabilities": [
+        "internal-scroll-owner",
+        "discrete-fullscreen-states",
+        "persistent-object",
+        "synchronized-copy-camera-state",
+        "explicit-exit",
+        "keyboard-stage-navigation",
+        "mobile-stage-recomposition"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "hero-object",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "state-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "state-materials",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "state-camera-poses",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 115150,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 fullscreen-state-machine 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 4,
+      "id": "spatial-editorial-journey",
+      "experienceSpec": "E04",
+      "name": "Spatial Editorial Journey",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "guided-spatial-journey",
+      "summary": "A long-form editorial journey with a 2D-to-3D terrain morph, a continuous horizontal spatial traverse, and distinct information-first chapter compositions.",
+      "demo": {
+        "url": "http://localhost:4192/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/spatial-editorial-journey.webp",
+      "identity": {
+        "category": "guided-spatial-journey",
+        "informationGoal": "Explain a long-form editorial subject through a continuous spatial journey while keeping reading and navigation primary.",
+        "composition": "A full-viewport WebGL world sits behind seven materially different editorial chapters: an opening field, a 2D-to-3D source transformation, an embedded horizontal traverse, and a sequence of photographic, archival, typographic, particle, map, and closing compositions.",
+        "interaction": "Native vertical wheel, touch, and keyboard scrolling drive one continuous story state. One declared chapter maps vertical travel into a reversible horizontal editorial traverse without capturing or replacing native scrolling.",
+        "semantic3d": "The opening source image becomes displaced terrain; camera movement reveals the same spatial system from new evidence-bearing viewpoints; later particle and material states explain the active chapter rather than acting as a decorative viewer."
+      },
+      "invariants": [
+        "The document remains an information website with readable headings, body copy, facts, captions, and route navigation.",
+        "Every chapter has a distinct composition role; changing only navigation or copy placement is not sufficient.",
+        "The 2D source image and the 3D terrain are two states of the same subject and must morph continuously.",
+        "The vertical-to-horizontal traverse remains scrubbed by native document progress and is reversible at every point.",
+        "Adjacent camera trajectories share an explicit boundary keyframe; camera position and gaze cannot switch formulas on different endpoints.",
+        "No important copy or control is accidentally obscured by WebGL, images, or transitional panels.",
+        "Desktop and mobile use separately authored camera paths and compositions.",
+        "Reduced motion disables smoothing and exposes every chapter in a stable readable state."
+      ],
+      "capabilities": [
+        "continuous-scroll-state",
+        "2d-to-3d-terrain-morph",
+        "vertical-to-horizontal-traverse",
+        "shared-camera-boundary-keyframes",
+        "delta-damped-camera-and-gaze",
+        "distinct-editorial-chapter-compositions",
+        "semantic-procedural-3d",
+        "bilingual-content",
+        "independent-mobile-trajectory",
+        "reduced-motion-fallback"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19.0.0 <20",
+            "reactThreeFiber": ">=9.0.0 <10",
+            "three": ">=0.185.0 <0.186.0",
+            "vite": ">=8.0.0 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "source-image",
+          "type": "image",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/assets.config.js#source"
+        },
+        {
+          "id": "traverse-image",
+          "type": "image",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/assets.config.js#traverse"
+        },
+        {
+          "id": "closing-image",
+          "type": "image",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/assets.config.js#estuary"
+        },
+        {
+          "id": "chapter-copy",
+          "type": "localized-text",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/content.js"
+        },
+        {
+          "id": "camera-trajectories",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/motion.config.js"
+        },
+        {
+          "id": "brand-fonts",
+          "type": "font",
+          "required": false,
+          "distribution": "user-supplied"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable reduced-motion content remains required",
+        "framework": "Framework-neutral contract with a verified React Three Fiber adapter"
+      },
+      "provenance": "Original WebMotion framework-neutral contract, React Three Fiber adapter, generated demonstration imagery, fictional copy, and procedural 3D. No third-party brand assets, source-site media, or copied implementation code are included.",
+      "fileCount": 24,
+      "packageBytes": 876222,
+      "qaGateCount": 8,
+      "prompt": "使用 WebMotion 的 spatial-editorial-journey 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 5,
+      "id": "guided-camera-route",
+      "experienceSpec": "E05",
+      "name": "Guided Camera Route",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "guided-camera-itinerary",
+      "summary": "Document scroll drives a continuous camera itinerary through room scale, object detail, and evidence plaque stops.",
+      "demo": {
+        "url": "http://localhost:4195/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/guided-camera-route.webp",
+      "identity": {
+        "category": "guided-camera-itinerary",
+        "informationGoal": "Guide readers through spatial evidence in a fixed order without turning the page into a free-roaming game.",
+        "composition": "A persistent full-screen spatial corridor sits behind three materially different stops: overview, close detail, and evidence record.",
+        "interaction": "Native document scroll moves a damped camera along a continuous route. Declared stops align copy, camera, and evidence while remaining reversible.",
+        "semantic3d": "Camera distance and viewing angle establish context, reveal surface evidence, and conclude on searchable factual information."
+      },
+      "invariants": [
+        "The route remains continuous through every stop boundary.",
+        "Every camera stop delivers a distinct searchable information result.",
+        "The user cannot enter free-roam or lose the route.",
+        "Camera position and gaze share explicit boundary keyframes.",
+        "Mobile uses a separately framed route with copy below the visual field.",
+        "Reduced motion shows stable stop images and complete DOM records."
+      ],
+      "capabilities": [
+        "guided-camera-itinerary",
+        "continuous-camera-and-gaze",
+        "declared-spatial-stops",
+        "reversible-route",
+        "evidence-bearing-camera-distance",
+        "mobile-route-recomposition",
+        "reduced-motion-stop-poses"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "environment-model",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "route-subjects",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "stop-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "camera-route",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "lighting-config",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 115082,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 guided-camera-route 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 6,
+      "id": "narrative-spatial-handoff",
+      "experienceSpec": "E06",
+      "name": "Narrative Spatial Handoff",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "narrative-to-spatial-index",
+      "summary": "A long scroll narrative visibly ends before control passes to a clickable globe or hotspot index.",
+      "demo": {
+        "url": "http://localhost:4196/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/narrative-spatial-handoff.webp",
+      "identity": {
+        "category": "narrative-to-spatial-index",
+        "informationGoal": "Build enough context through narrative progression, then let readers directly select places, records, or nodes.",
+        "composition": "A typographic longform story occupies the first act. A clear threshold introduces a separate full-screen spatial index with hotspots and a record panel.",
+        "interaction": "Native scroll owns the story. After an explicit handoff, pointer and keyboard selection own the spatial index; further scrolling does not change selection.",
+        "semantic3d": "The globe encodes geographic distribution and makes selected records spatially comparable."
+      },
+      "invariants": [
+        "The narrative visibly concludes before the index accepts spatial selection.",
+        "Scroll does not silently continue controlling the index.",
+        "Every hotspot has an equivalent DOM button and record.",
+        "Selection updates the globe and information panel together.",
+        "Mobile serializes the globe, hotspot list, and record panel.",
+        "Reduced motion keeps selection usable with a static globe pose."
+      ],
+      "capabilities": [
+        "two-act-interaction",
+        "explicit-control-handoff",
+        "scroll-narrative",
+        "click-spatial-index",
+        "synchronized-selection-record",
+        "keyboard-hotspots",
+        "mobile-index-serialization"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "narrative-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "spatial-base",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "hotspot-records",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "selection-camera-poses",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 117900,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 narrative-spatial-handoff 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 7,
+      "id": "editorial-media-rhythm",
+      "experienceSpec": "E07",
+      "name": "Editorial Media Rhythm",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "editorial-media-choreography",
+      "summary": "Typography, media density, whitespace, and one bounded spatial insert create depth without a persistent 3D object.",
+      "demo": {
+        "url": "http://localhost:4197/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/editorial-media-rhythm.webp",
+      "identity": {
+        "category": "editorial-media-choreography",
+        "informationGoal": "Build a premium editorial information page when continuous 3D would distract from reading.",
+        "composition": "Large typographic cover, full-bleed media field, essay spread, bounded spatial insert, touchable media cabinet, quote, and credits each use different density.",
+        "interaction": "Ordinary document flow remains primary. Media and type enter through native scrolling; one embedded 3D figure answers a local question and then releases the reader.",
+        "semantic3d": "The bounded spatial insert demonstrates material continuity only where the essay requires spatial evidence."
+      },
+      "invariants": [
+        "No persistent 3D object follows the reader through the document.",
+        "At least five distinct density rhythms are visible.",
+        "The embedded 3D figure has a local information job and bounded duration.",
+        "The document remains complete if the spatial insert fails.",
+        "Mobile turns the media cabinet into native horizontal touch without affecting document scroll.",
+        "Reduced motion preserves the same editorial sequence."
+      ],
+      "capabilities": [
+        "editorial-density-choreography",
+        "bounded-spatial-insert",
+        "ordinary-document-flow",
+        "asymmetric-spreads",
+        "touch-media-cabinet",
+        "no-persistent-scene",
+        "reduced-motion-document"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "hero-media",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "editorial-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "media-cabinet",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "spatial-insert",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "captions",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 115417,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 editorial-media-rhythm 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 8,
+      "id": "spatial-product-document",
+      "experienceSpec": "E08",
+      "name": "Spatial Product Document",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "spatially-enhanced-document",
+      "summary": "One spatial product hero explains a structural promise, then yields to an ordinary specifications and evidence document.",
+      "demo": {
+        "url": "http://localhost:4198/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/spatial-product-document.webp",
+      "identity": {
+        "category": "spatially-enhanced-document",
+        "informationGoal": "Use 3D to clarify one product structure without making every section depend on a persistent canvas.",
+        "composition": "A split but asymmetric hero pairs product copy with one contained spatial object. Facts, specifications, and evidence continue as conventional DOM sections.",
+        "interaction": "Ordinary document flow. The hero object uses bounded ambient motion and one CTA scrolls to standard specifications.",
+        "semantic3d": "The spatial arch explains how one continuous scan captures a full structure instead of isolated samples."
+      },
+      "invariants": [
+        "The spatial object is contained to the hero and does not follow into specifications.",
+        "The hero makes one structural product claim visible.",
+        "Facts and specifications are standard searchable DOM content.",
+        "The page remains useful when WebGL is unavailable.",
+        "Mobile places the spatial object before the copy and preserves the CTA.",
+        "Reduced motion leaves a stable product pose."
+      ],
+      "capabilities": [
+        "bounded-spatial-product-hero",
+        "standard-document-flow",
+        "semantic-structure-visualization",
+        "searchable-specifications",
+        "webgl-fallback",
+        "mobile-hero-reorder",
+        "reduced-motion-stable-pose"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "product-model",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "product-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "key-facts",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "specifications",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "fallback-poster",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 115523,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 spatial-product-document 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 9,
+      "id": "click-spatial-index",
+      "experienceSpec": "E09",
+      "name": "Click Spatial Index",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "non-scroll-spatial-navigation",
+      "summary": "Floor and room buttons directly control a spatial building model and an information panel; scroll is not the navigation model.",
+      "demo": {
+        "url": "http://localhost:4199/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/click-spatial-index.webp",
+      "identity": {
+        "category": "non-scroll-spatial-navigation",
+        "informationGoal": "Let readers browse hierarchical spaces directly when sequence is less important than location and comparison.",
+        "composition": "A full-screen workspace contains floor tabs, an exploded building model, room pins, and a synchronized record panel.",
+        "interaction": "Click or keyboard selection chooses a floor and room. Selection updates model emphasis, camera framing, pins, and the DOM record in place.",
+        "semantic3d": "The building model preserves floor and room relationships while selection reveals one record without losing spatial context."
+      },
+      "invariants": [
+        "Scroll never acts as the primary navigation input.",
+        "Floor and room hierarchy is explicit in DOM controls.",
+        "Model, pins, and information panel update in one selection transaction.",
+        "The selected room remains spatially contextualized.",
+        "Mobile places the model above a touch-friendly room list and record.",
+        "Reduced motion switches selection without camera travel."
+      ],
+      "capabilities": [
+        "direct-spatial-selection",
+        "hierarchical-floor-room-index",
+        "synchronized-model-record",
+        "no-scroll-navigation",
+        "keyboard-room-controls",
+        "mobile-index-stack",
+        "reduced-motion-direct-selection"
+      ],
+      "adapters": [
+        {
+          "id": "react-r3f",
+          "available": true,
+          "path": "adapters/react-r3f",
+          "entry": "adapters/react-r3f/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "reactThreeFiber": ">=9 <10",
+            "three": ">=0.185 <0.186",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-r3f"
+      ],
+      "assetSlots": [
+        {
+          "id": "building-model",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "floor-records",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "room-records",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        },
+        {
+          "id": "selection-camera-poses",
+          "type": "motion-config",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-r3f/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+        "framework": "Framework-neutral contract with a react-r3f adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 19,
+      "packageBytes": 117003,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 click-spatial-index 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    },
+    {
+      "order": 10,
+      "id": "prerendered-spatial-document",
+      "experienceSpec": "E10",
+      "name": "Pre-rendered Spatial Document",
+      "version": "0.1.0",
+      "availability": "adapter",
+      "category": "prerendered-spatial-media-document",
+      "summary": "Pre-rendered spatial plates provide visual scale and atmosphere inside an ordinary corporate information document with no WebGL runtime.",
+      "demo": {
+        "url": "http://localhost:4200/",
+        "label": "打开实例"
+      },
+      "license": "CC0-1.0",
+      "preview": "/previews/prerendered-spatial-document.webp",
+      "identity": {
+        "category": "prerendered-spatial-media-document",
+        "informationGoal": "Deliver reliable spatial storytelling when realtime interaction adds cost but no additional information value.",
+        "composition": "Large typographic cover, one pre-rendered hero plate, text spread, two spatial detail plates, operations copy, and technical record follow normal document flow.",
+        "interaction": "Native document scrolling and ordinary image loading only. Media can be replaced by video, image sequences, or responsive pictures without a realtime scene.",
+        "semantic3d": "Pre-rendered plates communicate infrastructure scale, sectional organization, and material detail while DOM content carries claims and specifications."
+      },
+      "invariants": [
+        "No WebGL canvas or realtime scene runtime is included.",
+        "Every spatial plate has descriptive alternative text and a caption.",
+        "The document remains understandable if media fails to load.",
+        "Media does not capture wheel, touch, or keyboard input.",
+        "Mobile uses responsive crops and serialized copy.",
+        "Reduced motion removes optional playback while preserving still plates."
+      ],
+      "capabilities": [
+        "zero-webgl-runtime",
+        "prerendered-spatial-media",
+        "ordinary-document-flow",
+        "responsive-picture-slots",
+        "media-failure-readable",
+        "mobile-responsive-crops",
+        "reduced-motion-stills"
+      ],
+      "adapters": [
+        {
+          "id": "react-media",
+          "available": true,
+          "path": "adapters/react-media",
+          "entry": "adapters/react-media/src/main.jsx",
+          "compatibility": {
+            "react": ">=19 <20",
+            "vite": ">=8 <9"
+          }
+        }
+      ],
+      "availableAdapters": [
+        "react-media"
+      ],
+      "assetSlots": [
+        {
+          "id": "hero-plate",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-media/src/template.config.js"
+        },
+        {
+          "id": "section-plate",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-media/src/template.config.js"
+        },
+        {
+          "id": "material-plate",
+          "type": "replaceable-media",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-media/src/template.config.js"
+        },
+        {
+          "id": "document-copy",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-media/src/template.config.js"
+        },
+        {
+          "id": "technical-records",
+          "type": "structured-content",
+          "required": true,
+          "distribution": "replaceable-demo-included",
+          "config": "adapters/react-media/src/template.config.js"
+        }
+      ],
+      "compatibility": {
+        "webmotion": ">=0.1.0",
+        "browser": "Modern browser; no WebGL required",
+        "framework": "Framework-neutral contract with a react-media adapter"
+      },
+      "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+      "fileCount": 22,
+      "packageBytes": 101022,
+      "qaGateCount": 7,
+      "prompt": "使用 WebMotion 的 prerendered-spatial-document 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
+    }
+  ]
+}

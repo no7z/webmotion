@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "foreground-product",
+  "name": "Foreground Product Journey",
+  "version": "0.1.0",
+  "availability": "contract-only",
+  "license": "CC0-1.0",
+  "provenance": "Original framework-neutral contract authored for WebMotion; no third-party brand assets or implementation code included.",
+  "experience": {
+    "category": "guided-spatial-journey",
+    "capabilities": [
+      "continuous-scroll-state",
+      "foreground-persistent-subject",
+      "semantic-3d-chapters",
+      "protected-copy-zones",
+      "independent-mobile-trajectory",
+      "reduced-motion-fallback"
+    ]
+  },
+  "adapters": [
+    {
+      "id": "react-r3f",
+      "available": false,
+      "note": "Planned; the v0 package contains the experience contract only."
+    },
+    {
+      "id": "vue-tresjs",
+      "available": false,
+      "note": "Planned."
+    },
+    {
+      "id": "vanilla-three",
+      "available": false,
+      "note": "Planned."
+    }
+  ],
+  "assetSlots": [
+    {
+      "id": "product-model",
+      "type": "model/gltf-binary",
+      "required": true,
+      "distribution": "user-supplied"
+    },
+    {
+      "id": "product-poster",
+      "type": "image",
+      "required": true,
+      "distribution": "user-supplied"
+    },
+    {
+      "id": "chapter-media",
+      "type": "image-or-video",
+      "required": false,
+      "distribution": "user-supplied"
+    },
+    {
+      "id": "brand-fonts",
+      "type": "font",
+      "required": false,
+      "distribution": "user-supplied"
+    }
+  ],
+  "compatibility": {
+    "webmotion": ">=0.1.0",
+    "browser": "WebGL2 recommended; readable fallback required",
+    "framework": "Framework-neutral contract"
+  },
+  "entrypoints": {
+    "contract": "contract.json",
+    "configSchema": "schema/config.schema.json",
+    "qa": "qa/checkpoints.json"
+  },
+  "files": [
+    {
+      "path": "contract.json",
+      "bytes": 3393,
+      "sha256": "4b8e5c214dca4872f1a860991df34ae96cb0958679a29428e3da3fd168f595eb"
+    },
+    {
+      "path": "qa/checkpoints.json",
+      "bytes": 1715,
+      "sha256": "176a74c954a6aa820c3ecbea6c853e7f70dc37d969bf3931783982d7bcdf50d9"
+    },
+    {
+      "path": "schema/config.schema.json",
+      "bytes": 3391,
+      "sha256": "035475005095a09dc48e0c88da52086cbfdbaafe345c90799a2c9b4a3bb38a59"
+    }
+  ]
+}

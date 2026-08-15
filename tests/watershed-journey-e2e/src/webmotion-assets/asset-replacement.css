@@ -1,0 +1,100 @@
+:root {
+  color: #17211c;
+  background: #e9ebe4;
+  font-family: Inter, "SF Pro Display", "Noto Sans SC", "PingFang SC", sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #e9ebe4; }
+button, input { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.wm-assets-shell { min-height: 100vh; padding: 26px; }
+.wm-assets-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1800px;
+  margin: 0 auto 22px;
+}
+.wm-assets-header p { margin: 0 0 13px; color: #657169; font: 600 11px/1.2 ui-monospace, monospace; letter-spacing: .14em; }
+.wm-assets-header h1 { margin: 0; font: 500 clamp(36px, 4vw, 66px)/.92 Georgia, "Noto Serif SC", serif; letter-spacing: -.045em; }
+.wm-assets-header > div > span { display: block; max-width: 660px; margin-top: 15px; color: #667069; font-size: 14px; line-height: 1.65; }
+.wm-assets-locale { display: flex; padding: 4px; border: 1px solid #c7cbc3; border-radius: 999px; background: rgba(255,255,255,.42); }
+.wm-assets-locale button { padding: 8px 14px; border: 0; border-radius: 999px; color: #667069; background: transparent; cursor: pointer; }
+.wm-assets-locale button.is-active { color: #f2f1e9; background: #18221d; }
+.wm-assets-notice { max-width: 1800px; margin: 0 auto 14px; padding: 11px 14px; border-radius: 8px; font-size: 13px; }
+.wm-assets-notice.is-success { color: #27573e; background: #d7e6d9; }
+.wm-assets-notice.is-error { color: #7b2d25; background: #f0d8d3; }
+
+.wm-assets-layout { display: grid; grid-template-columns: minmax(360px, 520px) minmax(0, 1fr); gap: 18px; max-width: 1800px; height: calc(100vh - 174px); min-height: 620px; margin: 0 auto; }
+.wm-assets-list { overflow: auto; padding-right: 5px; scrollbar-width: thin; }
+.wm-assets-group + .wm-assets-group { margin-top: 28px; }
+.wm-assets-group__title { display: flex; align-items: center; justify-content: space-between; margin: 0 2px 9px; color: #778077; font: 600 10px/1 ui-monospace, monospace; letter-spacing: .13em; text-transform: uppercase; }
+.wm-assets-group__title b { font-weight: 500; }
+.wm-assets-card { overflow: hidden; margin-bottom: 10px; border: 1px solid #d2d4cd; border-radius: 14px; background: rgba(248,248,242,.88); box-shadow: 0 12px 38px rgba(42,49,44,.06); }
+.wm-assets-card__preview { height: 168px; background: #d9ddd4; }
+.wm-assets-card__preview img, .wm-assets-card__preview video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.wm-assets-file { height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; color: #f1f0e8; background: linear-gradient(145deg, #28372f, #111914); }
+.wm-assets-file span { font: 500 40px/1 Georgia, serif; }
+.wm-assets-file strong { max-width: 85%; overflow: hidden; color: #aab5ad; font: 500 11px/1.2 ui-monospace, monospace; text-overflow: ellipsis; white-space: nowrap; }
+.wm-assets-file--font { color: #24362b; background: #d9d1bd; }
+.wm-assets-file--font strong { color: #647066; }
+.wm-assets-card__body { padding: 17px; }
+.wm-assets-card__heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.wm-assets-card__heading h2 { margin: 5px 0 0; font-size: 19px; line-height: 1.25; font-weight: 550; letter-spacing: -.02em; }
+.wm-assets-kind { color: #758077; font: 600 9px/1 ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; }
+.wm-assets-required { padding: 5px 8px; border-radius: 99px; color: #526159; background: #e4e8df; font-size: 10px; }
+.wm-assets-card dl { margin: 15px 0; padding: 12px 0; border-top: 1px solid #dfe1da; border-bottom: 1px solid #dfe1da; }
+.wm-assets-card dl div { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 10px; font-size: 11px; line-height: 1.45; }
+.wm-assets-card dl div + div { margin-top: 7px; }
+.wm-assets-card dt { color: #8a928b; }
+.wm-assets-card dd { min-width: 0; overflow: hidden; margin: 0; color: #4a544e; text-overflow: ellipsis; white-space: nowrap; }
+.wm-assets-drop { display: grid; place-items: center; gap: 6px; min-height: 88px; padding: 13px; border: 1px dashed #b8beb6; border-radius: 10px; transition: .2s ease; }
+.wm-assets-drop.is-dragging { border-color: #2f6247; background: #e2ebe2; transform: translateY(-1px); }
+.wm-assets-drop input { display: none; }
+.wm-assets-drop button { padding: 9px 14px; border: 0; border-radius: 999px; color: white; background: #1b2b22; cursor: pointer; }
+.wm-assets-drop button:disabled { opacity: .55; cursor: wait; }
+.wm-assets-drop span { color: #929991; font-size: 10px; }
+.wm-assets-reset { margin-top: 10px; padding: 0; border: 0; color: #68736b; background: transparent; font-size: 11px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.wm-assets-reset:disabled { opacity: .35; cursor: default; }
+.wm-assets-empty { padding: 28px; border: 1px dashed #bec4bb; border-radius: 14px; color: #68736b; text-align: center; }
+.wm-assets-card--text { overflow: visible; }
+.wm-assets-text-language { margin: 14px 0 7px; color: #7b847d; font: 600 9px/1 ui-monospace, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.wm-assets-card--text textarea { width: 100%; min-height: 94px; resize: vertical; padding: 13px 14px; border: 1px solid #cfd3cb; border-radius: 10px; outline: none; color: #25312a; background: #fff; font: 400 14px/1.65 Inter, "Noto Sans SC", "PingFang SC", sans-serif; transition: border-color .2s, box-shadow .2s; }
+.wm-assets-card--text textarea:focus { border-color: #537362; box-shadow: 0 0 0 3px rgba(83,115,98,.11); }
+.wm-assets-text-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 10px; }
+.wm-assets-text-actions > span { color: #979d97; font: 500 9px/1 ui-monospace, monospace; }
+.wm-assets-text-actions > div { display: flex; align-items: center; gap: 12px; }
+.wm-assets-text-actions .wm-assets-reset { margin-top: 0; }
+.wm-assets-save { padding: 9px 14px; border: 0; border-radius: 999px; color: white; background: #1b2b22; cursor: pointer; }
+.wm-assets-save:disabled { opacity: .38; cursor: default; }
+.wm-assets-metric-fields { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(90px, .6fr); gap: 10px; margin-top: 16px; }
+.wm-assets-metric-fields label { display: grid; gap: 7px; }
+.wm-assets-metric-fields label > span { color: #7b847d; font: 600 9px/1 ui-monospace, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.wm-assets-metric-fields input { width: 100%; min-width: 0; padding: 12px 13px; border: 1px solid #cfd3cb; border-radius: 9px; outline: none; color: #25312a; background: #fff; font-size: 15px; }
+.wm-assets-metric-fields input:focus { border-color: #537362; box-shadow: 0 0 0 3px rgba(83,115,98,.11); }
+
+.wm-assets-preview { min-width: 0; overflow: hidden; border: 1px solid #cdd0c8; border-radius: 16px; background: #111713; box-shadow: 0 18px 60px rgba(35,43,37,.11); }
+.wm-assets-preview__bar { height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; color: #aeb7b0; background: #17201b; font-size: 11px; }
+.wm-assets-preview__bar > div { display: flex; align-items: center; gap: 9px; }
+.wm-assets-preview__bar i { width: 7px; height: 7px; border-radius: 50%; background: #7dd19c; box-shadow: 0 0 0 4px rgba(125,209,156,.1); }
+.wm-assets-preview__bar a { color: #c8d0ca; text-decoration: none; }
+.wm-assets-preview iframe { display: block; width: 100%; height: calc(100% - 48px); border: 0; background: white; }
+
+@media (max-width: 900px) {
+  .wm-assets-shell { padding: 18px; }
+  .wm-assets-layout { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  .wm-assets-preview { order: -1; height: 58vh; min-height: 430px; }
+  .wm-assets-list { overflow: visible; }
+}
+
+@media (max-width: 560px) {
+  .wm-assets-header { align-items: flex-start; }
+  .wm-assets-header > div > span { font-size: 12px; }
+  .wm-assets-layout { gap: 12px; }
+  .wm-assets-preview { height: 52vh; min-height: 360px; }
+  .wm-assets-card__preview { height: 142px; }
+}

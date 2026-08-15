@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://webmotion.local/schemas/foreground-product.config.schema.json",
+  "title": "Foreground Product Journey configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content", "assets", "chapters", "motion"],
+  "properties": {
+    "content": {
+      "type": "object",
+      "required": ["title", "chapters"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "languages": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "chapters": { "type": "array", "items": { "$ref": "#/$defs/contentChapter" }, "minItems": 3 }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "required": ["model"],
+      "properties": {
+        "model": { "type": "string", "minLength": 1 },
+        "poster": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "fonts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/chapterState" },
+      "minItems": 3
+    },
+    "motion": {
+      "type": "object",
+      "required": ["desktop", "mobile", "reduced"],
+      "properties": {
+        "desktop": { "$ref": "#/$defs/trajectory" },
+        "mobile": { "$ref": "#/$defs/trajectory" },
+        "reduced": { "enum": ["static", "chapter-poses"] }
+      }
+    }
+  },
+  "$defs": {
+    "contentChapter": {
+      "type": "object",
+      "required": ["id", "heading", "body"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "eyebrow": { "type": "string" },
+        "heading": { "type": "string" },
+        "body": { "type": "string" },
+        "fact": { "type": "string" }
+      }
+    },
+    "chapterState": {
+      "type": "object",
+      "required": ["id", "start", "end", "protectedZones"],
+      "properties": {
+        "id": { "type": "string" },
+        "start": { "type": "number", "minimum": 0, "maximum": 1 },
+        "end": { "type": "number", "minimum": 0, "maximum": 1 },
+        "protectedZones": {
+          "type": "object",
+          "required": ["desktop", "mobile"],
+          "properties": {
+            "desktop": { "type": "array", "items": { "$ref": "#/$defs/rect" } },
+            "mobile": { "type": "array", "items": { "$ref": "#/$defs/rect" } }
+          }
+        }
+      }
+    },
+    "trajectory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chapter", "position", "rotation", "scale"],
+        "properties": {
+          "chapter": { "type": "string" },
+          "position": { "$ref": "#/$defs/vec3" },
+          "rotation": { "$ref": "#/$defs/vec3" },
+          "scale": { "type": "number", "exclusiveMinimum": 0 },
+          "ease": { "type": "string" }
+        }
+      }
+    },
+    "vec3": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "rect": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 },
+        "width": { "type": "number", "minimum": 0, "maximum": 1 },
+        "height": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}
+

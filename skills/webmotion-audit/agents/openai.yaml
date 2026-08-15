@@ -1,0 +1,4 @@
+interface:
+  display_name: "WebMotion Audit"
+  short_description: "Audit motion, content replacement, and safety"
+  default_prompt: "Use $webmotion-audit to verify the generated page, standalone asset, copy, and display-metric replacement page, and production separation."

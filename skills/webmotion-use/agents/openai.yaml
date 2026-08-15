@@ -1,0 +1,4 @@
+interface:
+  display_name: "WebMotion Use"
+  short_description: "Install templates with content replacement"
+  default_prompt: "Use $webmotion-use to install a WebMotion template with a separate asset, copy, and display-metric replacement page."

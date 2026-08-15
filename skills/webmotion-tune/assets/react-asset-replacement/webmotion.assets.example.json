@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "previewPath": "/",
+  "slots": [
+    {
+      "id": "hero-image",
+      "label": {
+        "zh": "首屏图片",
+        "en": "Hero image"
+      },
+      "group": "images",
+      "kind": "image",
+      "value": "/images/hero.webp",
+      "defaultValue": "/images/hero.webp",
+      "accept": [".webp", ".avif", ".png", ".jpg", ".jpeg"],
+      "required": true,
+      "source": "Project artwork",
+      "license": "Project-owned",
+      "fallback": "/images/hero-fallback.webp"
+    },
+    {
+      "id": "product-model",
+      "label": {
+        "zh": "产品模型",
+        "en": "Product model"
+      },
+      "group": "models",
+      "kind": "model",
+      "value": "/models/product.glb",
+      "defaultValue": "/models/product.glb",
+      "accept": [".glb"],
+      "required": true,
+      "source": "Project model",
+      "license": "Project-owned",
+      "fallback": "CSS silhouette"
+    },
+    {
+      "id": "hero-title",
+      "label": {
+        "zh": "首屏标题",
+        "en": "Hero title"
+      },
+      "group": "copy",
+      "kind": "text",
+      "value": {
+        "zh": "让空间讲述产品",
+        "en": "LET SPACE TELL THE STORY"
+      },
+      "defaultValue": {
+        "zh": "让空间讲述产品",
+        "en": "LET SPACE TELL THE STORY"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "impact-distance",
+      "label": {
+        "zh": "影响距离",
+        "en": "Impact distance"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "4,860",
+        "unit": "m"
+      },
+      "defaultValue": {
+        "amount": "4,860",
+        "unit": "m"
+      },
+      "amountMaxLength": 24,
+      "unitMaxLength": 12,
+      "required": true
+    }
+  ]
+}

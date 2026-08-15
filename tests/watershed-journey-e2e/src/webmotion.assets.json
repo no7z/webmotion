@@ -1,0 +1,712 @@
+{
+  "version": 1,
+  "previewPath": "/",
+  "slots": [
+    {
+      "id": "glacial-source",
+      "label": {
+        "zh": "章节 01 · 主图",
+        "en": "Chapter 01 · Main image"
+      },
+      "group": "page-images",
+      "kind": "image",
+      "value": "/images/glacial-source.webp",
+      "defaultValue": "/images/glacial-source.webp",
+      "accept": [
+        ".webp",
+        ".avif",
+        ".png",
+        ".jpg",
+        ".jpeg"
+      ],
+      "required": true,
+      "source": "WebMotion original artwork",
+      "license": "Project-owned test asset",
+      "fallback": "/images/glacial-source.webp"
+    },
+    {
+      "id": "cloud-forest",
+      "label": {
+        "zh": "章节 02 · 主图",
+        "en": "Chapter 02 · Main image"
+      },
+      "group": "page-images",
+      "kind": "image",
+      "value": "/images/cloud-forest.webp",
+      "defaultValue": "/images/cloud-forest.webp",
+      "accept": [
+        ".webp",
+        ".avif",
+        ".png",
+        ".jpg",
+        ".jpeg"
+      ],
+      "required": true,
+      "source": "WebMotion original artwork",
+      "license": "Project-owned test asset",
+      "fallback": "/images/cloud-forest.webp"
+    },
+    {
+      "id": "estuary",
+      "label": {
+        "zh": "章节 06 · 主图",
+        "en": "Chapter 06 · Main image"
+      },
+      "group": "page-images",
+      "kind": "image",
+      "value": "/images/estuary.webp",
+      "defaultValue": "/images/estuary.webp",
+      "accept": [
+        ".webp",
+        ".avif",
+        ".png",
+        ".jpg",
+        ".jpeg"
+      ],
+      "required": true,
+      "source": "WebMotion original artwork",
+      "license": "Project-owned test asset",
+      "fallback": "/images/estuary.webp"
+    },
+    {
+      "id": "hero-title",
+      "label": {
+        "zh": "首屏标题",
+        "en": "Hero title"
+      },
+      "group": "hero-copy",
+      "kind": "text",
+      "value": {
+        "zh": "循流\n\n",
+        "en": "FOLLOWING\nTHE CURRENT"
+      },
+      "defaultValue": {
+        "zh": "循流\n而行",
+        "en": "FOLLOWING\nTHE CURRENT"
+      },
+      "maxLength": 120,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "hero-project",
+      "label": {
+        "zh": "首屏辅助标识",
+        "en": "Hero supporting label"
+      },
+      "group": "hero-copy",
+      "kind": "text",
+      "value": {
+        "zh": "一条虚构河流的空间纪实",
+        "en": "A SPATIAL RECORD OF A FICTIONAL RIVER"
+      },
+      "defaultValue": {
+        "zh": "一条虚构河流的空间纪实",
+        "en": "A SPATIAL RECORD OF A FICTIONAL RIVER"
+      },
+      "maxLength": 180,
+      "multiline": false,
+      "required": true
+    },
+    {
+      "id": "hero-intro",
+      "label": {
+        "zh": "首屏导语",
+        "en": "Hero introduction"
+      },
+      "group": "hero-copy",
+      "kind": "text",
+      "value": {
+        "zh": "从冰川的一滴水开始，沿着雾林、峡谷与河口，追踪一条河如何塑造一片大陆。",
+        "en": "Beginning with one drop beneath the ice, follow a river through cloud forest, canyon and estuary—and watch it shape a continent."
+      },
+      "defaultValue": {
+        "zh": "从冰川的一滴水开始，沿着雾林、峡谷与河口，追踪一条河如何塑造一片大陆。",
+        "en": "Beginning with one drop beneath the ice, follow a river through cloud forest, canyon and estuary—and watch it shape a continent."
+      },
+      "maxLength": 500,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-source-title",
+      "label": {
+        "zh": "章节 01 · 标题",
+        "en": "Chapter 01 · Title"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "水从光里醒来\n撒\n",
+        "en": "WATER WAKES IN LIGHT"
+      },
+      "defaultValue": {
+        "zh": "水从光里醒来",
+        "en": "WATER WAKES IN LIGHT"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-source-body",
+      "label": {
+        "zh": "章节 01 · 正文",
+        "en": "Chapter 01 · Body"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "在虚构的维尔德山脉，冰层每天向后退去几厘米。一条没有名字的细流，从黑色岩脊间第一次显出方向。",
+        "en": "In the fictional Verde range, ice retreats by centimetres each day. Between dark ridges, an unnamed stream finds its first direction."
+      },
+      "defaultValue": {
+        "zh": "在虚构的维尔德山脉，冰层每天向后退去几厘米。一条没有名字的细流，从黑色岩脊间第一次显出方向。",
+        "en": "In the fictional Verde range, ice retreats by centimetres each day. Between dark ridges, an unnamed stream finds its first direction."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-canyon-title",
+      "label": {
+        "zh": "章节 03 · 标题",
+        "en": "Chapter 03 · Title"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "峡谷记住每一次洪水",
+        "en": "THE CANYON REMEMBERS"
+      },
+      "defaultValue": {
+        "zh": "峡谷记住每一次洪水",
+        "en": "THE CANYON REMEMBERS"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-canyon-body",
+      "label": {
+        "zh": "章节 03 · 正文",
+        "en": "Chapter 03 · Body"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "水位落下后，岩壁上的浅色线仍标记着上一季的峰值。地貌像一份缓慢书写、无法擦除的档案。",
+        "en": "When the water falls, pale lines on the rock still mark last season’s peak. The land is an archive written slowly and never erased."
+      },
+      "defaultValue": {
+        "zh": "水位落下后，岩壁上的浅色线仍标记着上一季的峰值。地貌像一份缓慢书写、无法擦除的档案。",
+        "en": "When the water falls, pale lines on the rock still mark last season’s peak. The land is an archive written slowly and never erased."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-life-title",
+      "label": {
+        "zh": "章节 04 · 标题",
+        "en": "Chapter 04 · Title"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "一条河，不只流向大海",
+        "en": "A RIVER FLOWS INTO LIFE"
+      },
+      "defaultValue": {
+        "zh": "一条河，不只流向大海",
+        "en": "A RIVER FLOWS INTO LIFE"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-life-body",
+      "label": {
+        "zh": "章节 04 · 正文",
+        "en": "Chapter 04 · Body"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "每条支流都连接着迁徙、繁殖与觅食的时间表。改变一段流速，可能同时改写数百种生物的季节。",
+        "en": "Every tributary links schedules of migration, breeding and feeding. Change one current and the seasons of hundreds of species may shift with it."
+      },
+      "defaultValue": {
+        "zh": "每条支流都连接着迁徙、繁殖与觅食的时间表。改变一段流速，可能同时改写数百种生物的季节。",
+        "en": "Every tributary links schedules of migration, breeding and feeding. Change one current and the seasons of hundreds of species may shift with it."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-rain-title",
+      "label": {
+        "zh": "章节 05 · 标题",
+        "en": "Chapter 05 · Title"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "雨在落下之前已经启程",
+        "en": "RAIN BEGINS BEFORE IT FALLS"
+      },
+      "defaultValue": {
+        "zh": "雨在落下之前已经启程",
+        "en": "RAIN BEGINS BEFORE IT FALLS"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-rain-body",
+      "label": {
+        "zh": "章节 05 · 正文",
+        "en": "Chapter 05 · Body"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "从叶片回到云层的水，沿大陆上空形成看不见的河。它让远方的土地，也进入同一个水循环。",
+        "en": "Water returning from leaves to clouds forms an invisible river above the continent, drawing distant ground into the same cycle."
+      },
+      "defaultValue": {
+        "zh": "从叶片回到云层的水，沿大陆上空形成看不见的河。它让远方的土地，也进入同一个水循环。",
+        "en": "Water returning from leaves to clouds forms an invisible river above the continent, drawing distant ground into the same cycle."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-estuary-title",
+      "label": {
+        "zh": "章节 06 · 标题",
+        "en": "Chapter 06 · Title"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "河流在海边分成千条路",
+        "en": "A THOUSAND ROADS TO SEA"
+      },
+      "defaultValue": {
+        "zh": "河流在海边分成千条路",
+        "en": "A THOUSAND ROADS TO SEA"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-estuary-body",
+      "label": {
+        "zh": "章节 06 · 正文",
+        "en": "Chapter 06 · Body"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "泥沙、盐分与潮汐在红树林之间重新编排河道。旅程没有结束，只是从一条主流变成无数条缝隙。",
+        "en": "Silt, salt and tide redraw channels through mangroves. The journey does not end; one river simply becomes a thousand openings."
+      },
+      "defaultValue": {
+        "zh": "泥沙、盐分与潮汐在红树林之间重新编排河道。旅程没有结束，只是从一条主流变成无数条缝隙。",
+        "en": "Silt, salt and tide redraw channels through mangroves. The journey does not end; one river simply becomes a thousand openings."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-return-title",
+      "label": {
+        "zh": "章节 07 · 标题",
+        "en": "Chapter 07 · Title"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "所有抵达，都是下一次出发",
+        "en": "EVERY ARRIVAL IS A DEPARTURE"
+      },
+      "defaultValue": {
+        "zh": "所有抵达，都是下一次出发",
+        "en": "EVERY ARRIVAL IS A DEPARTURE"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "chapter-return-body",
+      "label": {
+        "zh": "章节 07 · 正文",
+        "en": "Chapter 07 · Body"
+      },
+      "group": "chapter-copy",
+      "kind": "text",
+      "value": {
+        "zh": "海面升起的水汽将再次越过森林、峡谷与冰脊。沿着同一条路线，回到一切尚未命名的地方。",
+        "en": "Vapour rises from the sea and crosses forest, canyon and ice once more, returning along the same route to places still unnamed."
+      },
+      "defaultValue": {
+        "zh": "海面升起的水汽将再次越过森林、峡谷与冰脊。沿着同一条路线，回到一切尚未命名的地方。",
+        "en": "Vapour rises from the sea and crosses forest, canyon and ice once more, returning along the same route to places still unnamed."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-1-title",
+      "label": {
+        "zh": "章节 02 · 分镜 1 · 标题",
+        "en": "Chapter 02 · Panel 1 · Title"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "森林把河流举向天空",
+        "en": "THE FOREST LIFTS THE RIVER"
+      },
+      "defaultValue": {
+        "zh": "森林把河流举向天空",
+        "en": "THE FOREST LIFTS THE RIVER"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-1-body",
+      "label": {
+        "zh": "章节 02 · 分镜 1 · 正文",
+        "en": "Chapter 02 · Panel 1 · Body"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "滚轮不再翻页，而是带你沿山脊横向穿行。雾、树冠和河谷在同一空间里依次显出深度。",
+        "en": "The wheel no longer turns a page. It carries you laterally along the ridge as mist, canopy and valley resolve into one continuous depth field."
+      },
+      "defaultValue": {
+        "zh": "滚轮不再翻页，而是带你沿山脊横向穿行。雾、树冠和河谷在同一空间里依次显出深度。",
+        "en": "The wheel no longer turns a page. It carries you laterally along the ridge as mist, canopy and valley resolve into one continuous depth field."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-2-title",
+      "label": {
+        "zh": "章节 02 · 分镜 2 · 标题",
+        "en": "Chapter 02 · Panel 2 · Title"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "水悬停在空气里",
+        "en": "WATER HANGS IN THE AIR"
+      },
+      "defaultValue": {
+        "zh": "水悬停在空气里",
+        "en": "WATER HANGS IN THE AIR"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-2-body",
+      "label": {
+        "zh": "章节 02 · 分镜 2 · 正文",
+        "en": "Chapter 02 · Panel 2 · Body"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "树冠截住水汽，附生植物把雾储存在叶片之间。这里的河流，有一部分从未落到地面。",
+        "en": "Canopies catch vapour and epiphytes hold fog between their leaves. Part of this river never reaches the ground."
+      },
+      "defaultValue": {
+        "zh": "树冠截住水汽，附生植物把雾储存在叶片之间。这里的河流，有一部分从未落到地面。",
+        "en": "Canopies catch vapour and epiphytes hold fog between their leaves. Part of this river never reaches the ground."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-3-title",
+      "label": {
+        "zh": "章节 02 · 分镜 3 · 标题",
+        "en": "Chapter 02 · Panel 3 · Title"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "的水来自雾",
+        "en": "72% ARRIVES AS FOG"
+      },
+      "defaultValue": {
+        "zh": "72% 的水来自雾",
+        "en": "72% ARRIVES AS FOG"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-3-body",
+      "label": {
+        "zh": "章节 02 · 分镜 3 · 正文",
+        "en": "Chapter 02 · Panel 3 · Body"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "传感器记录到，旱季里大部分可用水不是来自降雨，而是树叶从移动的云中捕获的细小水滴。",
+        "en": "Sensors show that in the dry season, most available water comes not from rain but from droplets combed out of moving cloud."
+      },
+      "defaultValue": {
+        "zh": "传感器记录到，旱季里大部分可用水不是来自降雨，而是树叶从移动的云中捕获的细小水滴。",
+        "en": "Sensors show that in the dry season, most available water comes not from rain but from droplets combed out of moving cloud."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-4-title",
+      "label": {
+        "zh": "章节 02 · 分镜 4 · 标题",
+        "en": "Chapter 02 · Panel 4 · Title"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "一座森林，也是一台造雨机器",
+        "en": "A FOREST IS A RAIN MACHINE"
+      },
+      "defaultValue": {
+        "zh": "一座森林，也是一台造雨机器",
+        "en": "A FOREST IS A RAIN MACHINE"
+      },
+      "maxLength": 160,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "cloud-panel-4-body",
+      "label": {
+        "zh": "章节 02 · 分镜 4 · 正文",
+        "en": "Chapter 02 · Panel 4 · Body"
+      },
+      "group": "chapter-02-panels",
+      "kind": "text",
+      "value": {
+        "zh": "当山体退到身后，照片、数据与地形重新合成同一个结论：森林正在制造下游的天气。",
+        "en": "As the ridge falls behind, image, data and terrain resolve into one finding: the forest is manufacturing weather downstream."
+      },
+      "defaultValue": {
+        "zh": "当山体退到身后，照片、数据与地形重新合成同一个结论：森林正在制造下游的天气。",
+        "en": "As the ridge falls behind, image, data and terrain resolve into one finding: the forest is manufacturing weather downstream."
+      },
+      "maxLength": 800,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "footer-credits",
+      "label": {
+        "zh": "页尾说明",
+        "en": "Footer credits"
+      },
+      "group": "footer-copy",
+      "kind": "text",
+      "value": {
+        "zh": "原创概念、文案、生成图片与程序化 3D 场景，仅用于 WebMotion 交互研究。",
+        "en": "Original concept, copy, generated imagery and procedural 3D scenes for WebMotion interaction research."
+      },
+      "defaultValue": {
+        "zh": "原创概念、文案、生成图片与程序化 3D 场景，仅用于 WebMotion 交互研究。",
+        "en": "Original concept, copy, generated imagery and procedural 3D scenes for WebMotion interaction research."
+      },
+      "maxLength": 500,
+      "multiline": true,
+      "required": true
+    },
+    {
+      "id": "metric-source",
+      "label": {
+        "zh": "章节 01 · 展示指标",
+        "en": "Chapter 01 · Display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "4,860",
+        "unit": "m"
+      },
+      "defaultValue": {
+        "amount": "4,860",
+        "unit": "m"
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-cloud-water",
+      "label": {
+        "zh": "章节 02 · 展示指标",
+        "en": "Chapter 02 · Display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "72",
+        "unit": "%"
+      },
+      "defaultValue": {
+        "amount": "72",
+        "unit": "%"
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-canyon",
+      "label": {
+        "zh": "章节 03 · 展示指标",
+        "en": "Chapter 03 · Display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "+8.4",
+        "unit": "m"
+      },
+      "defaultValue": {
+        "amount": "+8.4",
+        "unit": "m"
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-life",
+      "label": {
+        "zh": "章节 04 · 展示指标",
+        "en": "Chapter 04 · Display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "1,240",
+        "unit": ""
+      },
+      "defaultValue": {
+        "amount": "1,240",
+        "unit": ""
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-rain",
+      "label": {
+        "zh": "章节 05 · 主展示指标",
+        "en": "Chapter 05 · Primary display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "20",
+        "unit": "bn t"
+      },
+      "defaultValue": {
+        "amount": "20",
+        "unit": "bn t"
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-rain-gauge",
+      "label": {
+        "zh": "章节 05 · 辅助展示指标",
+        "en": "Chapter 05 · Secondary display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "07.2",
+        "unit": "MM / H"
+      },
+      "defaultValue": {
+        "amount": "07.2",
+        "unit": "MM / H"
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-estuary",
+      "label": {
+        "zh": "章节 06 · 展示指标",
+        "en": "Chapter 06 · Display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "186",
+        "unit": "km"
+      },
+      "defaultValue": {
+        "amount": "186",
+        "unit": "km"
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    },
+    {
+      "id": "metric-return",
+      "label": {
+        "zh": "章节 07 · 展示指标",
+        "en": "Chapter 07 · Display metric"
+      },
+      "group": "display-metrics",
+      "kind": "metric",
+      "value": {
+        "amount": "∞",
+        "unit": ""
+      },
+      "defaultValue": {
+        "amount": "∞",
+        "unit": ""
+      },
+      "amountMaxLength": 32,
+      "unitMaxLength": 24,
+      "required": true
+    }
+  ]
+}

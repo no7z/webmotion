@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "license": "CC0-1.0",
+  "provenance": "Original WebMotion fictional-river demonstration assets generated for this repository; no third-party brand assets or source-site media are included.",
+  "assets": [
+    { "path": "public/images/glacial-source.webp", "role": "source image and terrain texture", "license": "CC0-1.0" },
+    { "path": "public/images/cloud-forest.webp", "role": "horizontal traverse evidence image", "license": "CC0-1.0" },
+    { "path": "public/images/estuary.webp", "role": "late-story geographic image", "license": "CC0-1.0" },
+    { "path": "public/favicon.svg", "role": "demonstration mark", "license": "CC0-1.0" }
+  ]
+}

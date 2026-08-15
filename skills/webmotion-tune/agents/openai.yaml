@@ -1,0 +1,4 @@
+interface:
+  display_name: "WebMotion Tune"
+  short_description: "Replace assets, copy, and metrics; tune 3D motion"
+  default_prompt: "Use $webmotion-tune to provide a separate visual asset, copy, and display-metric replacement page and tune the active page through code."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "WebMotion"
+  short_description: "Build motion pages with visual content replacement"
+  default_prompt: "Use $webmotion to build a motion-rich page and a separate visual asset, copy, and display-metric replacement page."

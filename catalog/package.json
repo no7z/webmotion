@@ -1,0 +1,21 @@
+{
+  "name": "webmotion-catalog",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-registry.mjs",
+    "predev": "npm run sync",
+    "dev": "vite --host 0.0.0.0",
+    "prebuild": "npm run sync",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.5",
+    "vite": "^8.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {}
+}

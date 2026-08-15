@@ -1,0 +1,17 @@
+{
+  "name": "webmotion",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "templates:generate": "node scripts/generate-experience-templates.mjs",
+    "templates:audit": "node scripts/write-experience-audits.mjs",
+    "templates:manifests": "node scripts/rebuild-manifests.mjs",
+    "templates:refresh": "npm run templates:generate && npm run templates:audit && npm run templates:manifests && npm run catalog:sync",
+    "registry:list": "node scripts/registry.mjs list",
+    "catalog:sync": "npm --prefix catalog run sync",
+    "catalog:build": "npm --prefix catalog run build",
+    "dev:all": "node scripts/dev-all.mjs",
+    "build:all": "node scripts/build-all.mjs"
+  }
+}

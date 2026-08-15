@@ -1,0 +1,4 @@
+interface:
+  display_name: "WebMotion Pack"
+  short_description: "Package an approved page for the WebMotion catalog"
+  default_prompt: "Use $webmotion-pack to package the current page as a WebMotion template."

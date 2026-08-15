@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "template": "fullscreen-state-machine",
+  "experienceSpec": "E03",
+  "identity": {
+    "category": "internal-fullscreen-state-machine",
+    "informationGoal": "Turn wheel or touch input into a small number of explicit full-screen states when ordinary document displacement would weaken the story.",
+    "composition": "A fixed stage owns the viewport. One persistent object, one large copy block, a state rail, and an explicit exit change together at three discrete positions.",
+    "interaction": "The document remains fixed while a focusable internal scroller owns progress. State buttons can move between stops and the final state exposes an exit.",
+    "semantic3d": "Instrument orientation and highlighted strings explain tension, resonance, and release as named states."
+  },
+  "invariants": [
+    "The document does not move while the internal stage is active.",
+    "Exactly three named states remain reachable by wheel, touch, keyboard, and buttons.",
+    "Object and copy change as one state transaction.",
+    "The final state exposes an explicit exit from the internal scroller.",
+    "Internal scrolling never traps keyboard focus permanently.",
+    "Reduced motion uses direct state changes without continuous camera travel."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02",
+      "03"
+    ],
+    "selectionItems": []
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Wheel input scrolls the focused internal container.",
+    "touch": "Touch scrolls the internal container with native momentum.",
+    "keyboard": "Tab focuses the stage; PageDown, arrows, and state buttons remain usable.",
+    "pointer": "State rail buttons jump to explicit stops."
+  },
+  "responsive": {
+    "desktop": "Object occupies the right field while copy holds the left foreground.",
+    "mobile": "Object moves to the upper field and copy occupies a protected lower panel within the same internal stage."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}
