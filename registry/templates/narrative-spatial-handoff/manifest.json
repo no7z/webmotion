@@ -113,8 +113,8 @@
     },
     {
       "path": "adapters/react-r3f/src/App.jsx",
-      "bytes": 16512,
-      "sha256": "1908fc0c89fb0d767c7b7f8d331fc762b434948aa114c9b2f602c2b00906af2b"
+      "bytes": 16624,
+      "sha256": "58a3f7e1832c26aaf920105097c4fdd613f8f8b0c92ab47ba7ea5c871171c533"
     },
     {
       "path": "adapters/react-r3f/src/Scene.jsx",
@@ -133,8 +133,8 @@
     },
     {
       "path": "adapters/react-r3f/src/styles.css",
-      "bytes": 33373,
-      "sha256": "7796a131506d5f4dc1968bd8c4dc91d2bfa237ad594f5b6996d1475082087554"
+      "bytes": 33467,
+      "sha256": "8360e27f6978b0833846e3b849f53eb8163e445318dbf55f16cf2d0b1c8291b7"
     },
     {
       "path": "adapters/react-r3f/src/template.config.js",

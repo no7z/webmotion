@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "registryVersion": "0.2.0",
-  "generatedAt": "2026-08-14T10:31:19.156Z",
+  "generatedAt": "2026-08-18T07:12:20.523Z",
   "templates": [
     {
       "id": "system-morph",
@@ -12,7 +12,7 @@
       "category": "continuous-composition-morph",
       "summary": "One persistent subject continuously unfolds into a distributed system before releasing an ordinary information document.",
       "demo": {
-        "url": "http://localhost:4193/",
+        "url": "/examples/system-morph/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -25,7 +25,7 @@
       "category": "guided-spatial-journey",
       "summary": "A scroll-led information page with a persistent foreground product crossing editorial chapters.",
       "demo": {
-        "url": "http://localhost:4191/",
+        "url": "/examples/foreground-product/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -40,7 +40,7 @@
       "category": "internal-fullscreen-state-machine",
       "summary": "An internal full-screen scroller advances a persistent instrument through three discrete states while the document itself stays fixed.",
       "demo": {
-        "url": "http://localhost:4194/",
+        "url": "/examples/fullscreen-state-machine/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -53,7 +53,7 @@
       "category": "guided-spatial-journey",
       "summary": "A long-form editorial journey with a 2D-to-3D terrain morph, a continuous horizontal spatial traverse, and distinct information-first chapter compositions.",
       "demo": {
-        "url": "http://localhost:4192/",
+        "url": "/examples/spatial-editorial-journey/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -68,7 +68,7 @@
       "category": "guided-camera-itinerary",
       "summary": "Document scroll drives a continuous camera itinerary through room scale, object detail, and evidence plaque stops.",
       "demo": {
-        "url": "http://localhost:4195/",
+        "url": "/examples/guided-camera-route/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -82,7 +82,7 @@
       "category": "narrative-to-spatial-index",
       "summary": "A long scroll narrative visibly ends before control passes to a clickable globe or hotspot index.",
       "demo": {
-        "url": "http://localhost:4196/",
+        "url": "/examples/narrative-spatial-handoff/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -96,7 +96,7 @@
       "category": "editorial-media-choreography",
       "summary": "Typography, media density, whitespace, and one bounded spatial insert create depth without a persistent 3D object.",
       "demo": {
-        "url": "http://localhost:4197/",
+        "url": "/examples/editorial-media-rhythm/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -110,7 +110,7 @@
       "category": "spatially-enhanced-document",
       "summary": "One spatial product hero explains a structural promise, then yields to an ordinary specifications and evidence document.",
       "demo": {
-        "url": "http://localhost:4198/",
+        "url": "/examples/spatial-product-document/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -124,7 +124,7 @@
       "category": "non-scroll-spatial-navigation",
       "summary": "Floor and room buttons directly control a spatial building model and an information panel; scroll is not the navigation model.",
       "demo": {
-        "url": "http://localhost:4199/",
+        "url": "/examples/click-spatial-index/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"
@@ -138,7 +138,7 @@
       "category": "prerendered-spatial-media-document",
       "summary": "Pre-rendered spatial plates provide visual scale and atmosphere inside an ordinary corporate information document with no WebGL runtime.",
       "demo": {
-        "url": "http://localhost:4200/",
+        "url": "/examples/prerendered-spatial-document/",
         "label": "打开实例"
       },
       "license": "CC0-1.0"

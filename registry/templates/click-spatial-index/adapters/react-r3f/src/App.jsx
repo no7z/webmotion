@@ -247,12 +247,13 @@ function ClickSpatialIndex({ language, setLanguage }) {
 
 function PrerenderedDocument({ language, setLanguage }) {
   useSmoothScroll();
+  const publicAsset = (file) => `${import.meta.env.BASE_URL}${file}`;
   return (
     <Shell language={language} setLanguage={setLanguage} className="prerendered-document">
       <section className="media-cover"><p>{config.kicker}</p><h1>{text(config.hero, language)}</h1><p>{text(config.intro, language)}</p></section>
-      <figure className="media-feature"><img src="/media/hero.svg" alt={text(config.mediaAlt, language)} /><figcaption>PRE-RENDERED SPATIAL PLATE / NO WEBGL RUNTIME</figcaption></figure>
+      <figure className="media-feature"><img src={publicAsset("media/hero.svg")} alt={text(config.mediaAlt, language)} /><figcaption>PRE-RENDERED SPATIAL PLATE / NO WEBGL RUNTIME</figcaption></figure>
       <section className="media-copy"><span>01 / INFRASTRUCTURE</span><h2>{text(config.chapters[0].title, language)}</h2><p>{text(config.chapters[0].body, language)}</p></section>
-      <section className="media-pair"><figure><img src="/media/detail-a.svg" alt="预渲染空间剖面" /><figcaption>PLATE A / SECTION</figcaption></figure><figure><img src="/media/detail-b.svg" alt="预渲染材质细节" /><figcaption>PLATE B / MATERIAL</figcaption></figure></section>
+      <section className="media-pair"><figure><img src={publicAsset("media/detail-a.svg")} alt="预渲染空间剖面" /><figcaption>PLATE A / SECTION</figcaption></figure><figure><img src={publicAsset("media/detail-b.svg")} alt="预渲染材质细节" /><figcaption>PLATE B / MATERIAL</figcaption></figure></section>
       <section className="media-copy media-copy-reverse"><span>02 / OPERATIONS</span><h2>{text(config.chapters[1].title, language)}</h2><p>{text(config.chapters[1].body, language)}</p></section>
       <section className="media-specs"><p>TECHNICAL RECORD</p><dl>{config.items.map((item) => <div key={item.label}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl></section>
       <Footer language={language} />

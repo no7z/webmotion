@@ -1,5 +1,5 @@
 export const templateAssets = {
-  source: "/images/glacial-source.webp",
-  traverse: "/images/cloud-forest.webp",
-  estuary: "/images/estuary.webp",
+  source: `${import.meta.env.BASE_URL}images/glacial-source.webp`,
+  traverse: `${import.meta.env.BASE_URL}images/cloud-forest.webp`,
+  estuary: `${import.meta.env.BASE_URL}images/estuary.webp`,
 };

@@ -158,8 +158,8 @@
     },
     {
       "path": "adapters/react-r3f/src/assets.config.js",
-      "bytes": 152,
-      "sha256": "f42c2660e498cf16a12f4f6dec79ca4a671df22e76504efb927aaf32db74791a"
+      "bytes": 230,
+      "sha256": "a75adce583e0658258c57fc4eae87b98f585cd743e02ef49a30cb421eabcb2d7"
     },
     {
       "path": "adapters/react-r3f/src/content.js",
@@ -178,8 +178,8 @@
     },
     {
       "path": "adapters/react-r3f/src/styles.css",
-      "bytes": 31014,
-      "sha256": "d0e56a58cbe68fd1891ae47e5bc5e2194501ec24bec1031ead509ef5ae7c6912"
+      "bytes": 31013,
+      "sha256": "d7d540ffb7b7be3655115aee62920f950e3611b734bc31d64a4433a50454dabc"
     },
     {
       "path": "adapters/react-r3f/vite.config.js",
