@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "template": "spatial-product-document",
+  "experienceSpec": "E08",
+  "identity": {
+    "category": "spatially-enhanced-document",
+    "informationGoal": "Use 3D to clarify one product structure without making every section depend on a persistent canvas.",
+    "composition": "A split but asymmetric hero pairs product copy with one contained spatial object. Facts, specifications, and evidence continue as conventional DOM sections.",
+    "interaction": "Ordinary document flow. The hero object uses bounded ambient motion and one CTA scrolls to standard specifications.",
+    "semantic3d": "The spatial arch explains how one continuous scan captures a full structure instead of isolated samples."
+  },
+  "invariants": [
+    "The spatial object is contained to the hero and does not follow into specifications.",
+    "The hero makes one structural product claim visible.",
+    "Facts and specifications are standard searchable DOM content.",
+    "The page remains useful when WebGL is unavailable.",
+    "Mobile places the spatial object before the copy and preserves the CTA.",
+    "Reduced motion leaves a stable product pose."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02"
+    ],
+    "selectionItems": [
+      "CAPTURE",
+      "ACCURACY",
+      "FORMAT",
+      "WARRANTY"
+    ]
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Native document scroll only.",
+    "touch": "Native touch document flow.",
+    "keyboard": "CTA and document structure remain keyboard accessible.",
+    "pointer": "Optional bounded product tilt; no semantic state depends on pointer."
+  },
+  "responsive": {
+    "desktop": "Asymmetric copy and contained spatial object share the hero.",
+    "mobile": "Spatial object is placed first, then copy and standard facts serialize."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

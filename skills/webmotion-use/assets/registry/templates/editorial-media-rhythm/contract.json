@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "template": "editorial-media-rhythm",
+  "experienceSpec": "E07",
+  "identity": {
+    "category": "editorial-media-choreography",
+    "informationGoal": "Build a premium editorial information page when continuous 3D would distract from reading.",
+    "composition": "Large typographic cover, full-bleed media field, essay spread, bounded spatial insert, touchable media cabinet, quote, and credits each use different density.",
+    "interaction": "Ordinary document flow remains primary. Media and type enter through native scrolling; one embedded 3D figure answers a local question and then releases the reader.",
+    "semantic3d": "The bounded spatial insert demonstrates material continuity only where the essay requires spatial evidence."
+  },
+  "invariants": [
+    "No persistent 3D object follows the reader through the document.",
+    "At least five distinct density rhythms are visible.",
+    "The embedded 3D figure has a local information job and bounded duration.",
+    "The document remains complete if the spatial insert fails.",
+    "Mobile turns the media cabinet into native horizontal touch without affecting document scroll.",
+    "Reduced motion preserves the same editorial sequence."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02",
+      "03"
+    ],
+    "selectionItems": [
+      "FORM",
+      "SURFACE",
+      "LIGHT",
+      "TYPE",
+      "CREDIT"
+    ]
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Native document flow only.",
+    "touch": "Native vertical document flow plus horizontal touch inside the media cabinet.",
+    "keyboard": "Document links and captions remain sequentially navigable.",
+    "pointer": "No required pointer-specific motion."
+  },
+  "responsive": {
+    "desktop": "Editorial spreads use asymmetric columns and broad whitespace.",
+    "mobile": "Spreads serialize; the media cabinet becomes a horizontal touch strip."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

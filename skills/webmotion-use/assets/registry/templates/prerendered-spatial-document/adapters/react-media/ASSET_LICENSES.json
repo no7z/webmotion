@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "path": "public/media/hero.svg",
+      "license": "CC0-1.0",
+      "provenance": "Original procedural SVG authored for WebMotion."
+    },
+    {
+      "path": "public/media/detail-a.svg",
+      "license": "CC0-1.0",
+      "provenance": "Original procedural SVG authored for WebMotion."
+    },
+    {
+      "path": "public/media/detail-b.svg",
+      "license": "CC0-1.0",
+      "provenance": "Original procedural SVG authored for WebMotion."
+    }
+  ]
+}

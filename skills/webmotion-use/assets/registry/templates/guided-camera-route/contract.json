@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "template": "guided-camera-route",
+  "experienceSpec": "E05",
+  "identity": {
+    "category": "guided-camera-itinerary",
+    "informationGoal": "Guide readers through spatial evidence in a fixed order without turning the page into a free-roaming game.",
+    "composition": "A persistent full-screen spatial corridor sits behind three materially different stops: overview, close detail, and evidence record.",
+    "interaction": "Native document scroll moves a damped camera along a continuous route. Declared stops align copy, camera, and evidence while remaining reversible.",
+    "semantic3d": "Camera distance and viewing angle establish context, reveal surface evidence, and conclude on searchable factual information."
+  },
+  "invariants": [
+    "The route remains continuous through every stop boundary.",
+    "Every camera stop delivers a distinct searchable information result.",
+    "The user cannot enter free-roam or lose the route.",
+    "Camera position and gaze share explicit boundary keyframes.",
+    "Mobile uses a separately framed route with copy below the visual field.",
+    "Reduced motion shows stable stop images and complete DOM records."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02",
+      "03"
+    ],
+    "selectionItems": []
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Native document scroll advances the camera itinerary.",
+    "touch": "Native touch momentum advances the same route.",
+    "keyboard": "Page keys and stop links remain functional.",
+    "pointer": "Stop navigation links scroll to declared route nodes."
+  },
+  "responsive": {
+    "desktop": "Broad spatial field with copy entering from protected right-side zones.",
+    "mobile": "Camera framing moves upward while copy occupies a stable lower gradient panel."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

@@ -1,0 +1,77 @@
+{
+  "locale": {
+    "default": "zh",
+    "supported": [
+      "zh",
+      "en"
+    ]
+  },
+  "content": {
+    "hero": {
+      "zh": "高级感来自节奏，不来自持续占屏。",
+      "en": "Depth comes from rhythm, not permanent occupation."
+    },
+    "intro": {
+      "zh": "文字、媒体和留白改变密度。3D 只在一个局部问题需要它时出现。",
+      "en": "Type, media, and whitespace change density. 3D appears only when one local question needs it."
+    },
+    "chapters": [
+      {
+        "id": "01",
+        "title": {
+          "zh": "先用尺度建立论点。",
+          "en": "Begin with scale as an argument."
+        },
+        "body": {
+          "zh": "标题、图像和正文的比例变化先于任何空间特效。",
+          "en": "The ratio between title, image, and body changes before any spatial effect appears."
+        }
+      },
+      {
+        "id": "02",
+        "title": {
+          "zh": "空间图只回答一个局部问题。",
+          "en": "The spatial figure answers one local question."
+        },
+        "body": {
+          "zh": "这段实时对象解释表面连续性，离开章节后不再跟随。",
+          "en": "This realtime object explains surface continuity and does not follow beyond the section."
+        }
+      },
+      {
+        "id": "03",
+        "title": {
+          "zh": "最后让信用和证据占满版面。",
+          "en": "End by giving credits and evidence the full field."
+        },
+        "body": {
+          "zh": "收束不是另一个特效，而是信息权重的最后一次变化。",
+          "en": "Closure is not another effect; it is the final change in information weight."
+        }
+      }
+    ],
+    "items": [
+      {
+        "label": "FORM"
+      },
+      {
+        "label": "SURFACE"
+      },
+      {
+        "label": "LIGHT"
+      },
+      {
+        "label": "TYPE"
+      },
+      {
+        "label": "CREDIT"
+      }
+    ]
+  },
+  "assets": {},
+  "motion": {
+    "desktop": {},
+    "mobile": {},
+    "reduced": "stable-states"
+  }
+}

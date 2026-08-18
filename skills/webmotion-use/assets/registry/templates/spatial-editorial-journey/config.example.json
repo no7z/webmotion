@@ -1,0 +1,74 @@
+{
+  "locale": {
+    "default": "zh",
+    "supported": ["zh", "en"]
+  },
+  "assets": {
+    "source": {
+      "src": "/images/glacial-source.webp",
+      "alt": "A high-altitude source landscape",
+      "license": "CC0-1.0",
+      "provenance": "Original generated WebMotion demonstration asset"
+    },
+    "traverse": {
+      "src": "/images/cloud-forest.webp",
+      "alt": "A cloud-forest field observation",
+      "license": "CC0-1.0",
+      "provenance": "Original generated WebMotion demonstration asset"
+    },
+    "closing": {
+      "src": "/images/estuary.webp",
+      "alt": "A river estuary seen from above",
+      "license": "CC0-1.0",
+      "provenance": "Original generated WebMotion demonstration asset"
+    }
+  },
+  "chapters": [
+    { "id": "source", "number": "01", "composition": "image-field", "eyebrow": { "zh": "源头", "en": "SOURCE" }, "title": { "zh": "水从光里醒来", "en": "WATER WAKES IN LIGHT" }, "body": { "zh": "源头说明。", "en": "Source explanation." }, "fact": "4,860 m" },
+    { "id": "traverse", "number": "02", "composition": "horizontal-traverse", "eyebrow": { "zh": "样带", "en": "TRANSECT" }, "title": { "zh": "沿空间穿行", "en": "CROSS THE FIELD" }, "body": { "zh": "空间样带说明。", "en": "Spatial transect explanation." }, "fact": "72%" },
+    { "id": "archive", "number": "03", "composition": "coordinate-archive", "eyebrow": { "zh": "档案", "en": "ARCHIVE" }, "title": { "zh": "地貌保存证据", "en": "THE LAND KEEPS EVIDENCE" }, "body": { "zh": "档案说明。", "en": "Archive explanation." }, "fact": "+8.4 m" },
+    { "id": "index", "number": "04", "composition": "editorial-index", "eyebrow": { "zh": "索引", "en": "INDEX" }, "title": { "zh": "关系形成网络", "en": "RELATIONS FORM A NETWORK" }, "body": { "zh": "索引说明。", "en": "Index explanation." }, "fact": "1,240" },
+    { "id": "field", "number": "05", "composition": "particle-field", "eyebrow": { "zh": "场", "en": "FIELD" }, "title": { "zh": "不可见的流动", "en": "THE INVISIBLE FLOW" }, "body": { "zh": "粒子场说明。", "en": "Particle-field explanation." }, "fact": "20 bn t" },
+    { "id": "plate", "number": "06", "composition": "geographic-plate", "eyebrow": { "zh": "图版", "en": "PLATE" }, "title": { "zh": "路径重新汇合", "en": "PATHS MEET AGAIN" }, "body": { "zh": "图版说明。", "en": "Geographic-plate explanation." }, "fact": "186 km" },
+    { "id": "return", "number": "07", "composition": "return-field", "eyebrow": { "zh": "回归", "en": "RETURN" }, "title": { "zh": "抵达也是出发", "en": "ARRIVAL IS DEPARTURE" }, "body": { "zh": "回归说明。", "en": "Return explanation." }, "fact": "∞" }
+  ],
+  "traverse": {
+    "chapter": "traverse",
+    "trackViewports": 4,
+    "panels": [
+      { "label": { "zh": "进入", "en": "ENTER" }, "title": { "zh": "进入空间", "en": "ENTER THE SPACE" }, "body": { "zh": "第一段。", "en": "First panel." } },
+      { "label": { "zh": "观察", "en": "OBSERVE" }, "title": { "zh": "证据出现", "en": "EVIDENCE APPEARS" }, "body": { "zh": "第二段。", "en": "Second panel." }, "mediaSlot": "traverse" },
+      { "label": { "zh": "测量", "en": "MEASURE" }, "title": { "zh": "数据进入空间", "en": "DATA ENTERS SPACE" }, "body": { "zh": "第三段。", "en": "Third panel." } },
+      { "label": { "zh": "离开", "en": "EXIT" }, "title": { "zh": "结论重新合成", "en": "THE FINDING RESOLVES" }, "body": { "zh": "第四段。", "en": "Fourth panel." } }
+    ]
+  },
+  "motion": {
+    "breakpoint": 760,
+    "desktop": {
+      "source": {
+        "start": { "position": [0, 0.15, 8.7], "lookAt": [0, 0, 0] },
+        "end": { "position": [-4.2, 3.8, 7.1], "lookAt": [-1.8, -0.55, 0] }
+      },
+      "traverse": {
+        "entryEnd": 0.16,
+        "start": { "position": [-4.2, 3.8, 7.1], "lookAt": [-1.8, -0.55, 0] },
+        "cruiseStart": { "position": [-7.2, 2.45, 7.3], "lookOffset": [1.8, -0.35, -1.2] },
+        "end": { "position": [7.2, 2.45, 6.65], "lookOffset": [1.8, -0.35, -1.2] }
+      }
+    },
+    "mobile": {
+      "source": {
+        "start": { "position": [0, 0.1, 9.1], "lookAt": [0, 0, 0] },
+        "end": { "position": [-2.8, 3.35, 7.6], "lookAt": [-1.1, -0.35, 0] }
+      },
+      "traverse": {
+        "entryEnd": 0.2,
+        "start": { "position": [-2.8, 3.35, 7.6], "lookAt": [-1.1, -0.35, 0] },
+        "cruiseStart": { "position": [-4.8, 2.35, 7.55], "lookOffset": [1.2, -0.25, -1] },
+        "end": { "position": [4.8, 2.35, 7.05], "lookOffset": [1.2, -0.25, -1] }
+      }
+    },
+    "damping": { "camera": 6.2, "lookAt": 7.4 },
+    "reduced": "direct-progress"
+  }
+}

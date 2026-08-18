@@ -7,7 +7,7 @@
     "templates:generate": "node scripts/generate-experience-templates.mjs",
     "templates:audit": "node scripts/write-experience-audits.mjs",
     "templates:manifests": "node scripts/rebuild-manifests.mjs",
-    "templates:refresh": "npm run templates:generate && npm run templates:audit && npm run templates:manifests && npm run catalog:sync",
+    "templates:refresh": "npm run templates:generate && npm run templates:audit && npm run templates:manifests && npm run skills:registry && npm run catalog:sync",
     "registry:list": "node scripts/registry.mjs list",
     "catalog:sync": "npm --prefix catalog run sync",
     "catalog:build": "npm --prefix catalog run build",
@@ -15,6 +15,8 @@
     "dev:all": "node scripts/dev-all.mjs",
     "dev:template": "node scripts/dev-template.mjs",
     "examples:sync": "node scripts/sync-examples.mjs",
+    "skills:registry": "node scripts/sync-skill-registry.mjs",
+    "skills:registry:check": "node scripts/sync-skill-registry.mjs --check",
     "build:all": "node scripts/build-all.mjs"
   }
 }

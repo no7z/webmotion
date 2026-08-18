@@ -10,11 +10,11 @@ Apply a catalog experience to the current workspace while preserving its interac
 ## Workflow
 
 1. Discover the current project and applicable instructions. Never ask the user to type a path.
-2. Run `node scripts/registry.mjs list` and present suitable templates, including availability and license.
+2. Run this Skill's bundled `scripts/registry.mjs list` and present suitable templates, including availability and license.
 3. If the request is reference-led, compare its composition, scroll mapping, camera/object motion, transitions, and mobile recomposition with template contracts. Do not match only colors or navigation.
 4. Confirm one template and adapter only when the choice is not inferable.
-5. Run `node scripts/registry.mjs show <template-id>` before installation.
-6. Preview target files with `node scripts/registry.mjs install <template-id> --dest <workspace> --dry-run`.
+5. Run the bundled registry script with `show <template-id>` before installation.
+6. Preview target files with the bundled registry script's `install <template-id> --dest <workspace> --dry-run` command.
 7. Run the same command without `--dry-run` only after resolving conflicts.
 8. Read the installed contract, schema, and QA checkpoints under `.webmotion/templates/<template-id>/`.
 9. If the package is `contract-only`, implement the experience in the existing stack from the contract; state plainly that no framework adapter was copied.

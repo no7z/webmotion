@@ -1,0 +1,92 @@
+{
+  "locale": {
+    "default": "zh",
+    "supported": [
+      "zh",
+      "en"
+    ]
+  },
+  "content": {
+    "hero": {
+      "zh": "一个主语，连续长成一套系统。",
+      "en": "One subject continuously becomes a system."
+    },
+    "intro": {
+      "zh": "主语不被替换。尺度、密度与关系持续变化，最后把阅读主导权交还给普通文档。",
+      "en": "The subject is never replaced. Scale, density, and relationships change continuously before ordinary reading takes over."
+    },
+    "chapters": [
+      {
+        "id": "01",
+        "label": "SUBJECT",
+        "title": {
+          "zh": "先识别一个稳定主语。",
+          "en": "Establish one stable subject."
+        },
+        "body": {
+          "zh": "低密度画面只建立材质、轮廓与首要行动。",
+          "en": "A low-density field establishes material, silhouette, and the primary action."
+        },
+        "metric": "01 UNIT"
+      },
+      {
+        "id": "02",
+        "label": "SYSTEM",
+        "title": {
+          "zh": "主语展开为十二个工作模块。",
+          "en": "The subject unfolds into twelve working modules."
+        },
+        "body": {
+          "zh": "所有模块共享一个来源，却用位置和颜色解释不同职责。",
+          "en": "Every module shares one origin while position and color explain distinct roles."
+        },
+        "metric": "12 MODULES"
+      },
+      {
+        "id": "03",
+        "label": "RELEASE",
+        "title": {
+          "zh": "空间收束，规格进入文档。",
+          "en": "Space resolves into a document."
+        },
+        "body": {
+          "zh": "沉浸舞台完成解释后主动退出，不长期占用信息阅读。",
+          "en": "The immersive stage exits after explanation instead of occupying the entire document."
+        },
+        "metric": "100% READABLE"
+      }
+    ],
+    "items": [
+      {
+        "label": "DENSITY",
+        "value": "0.82",
+        "note": {
+          "zh": "单位体积的有效覆盖率",
+          "en": "Effective coverage per unit volume"
+        }
+      },
+      {
+        "label": "RECOVERY",
+        "value": "96%",
+        "note": {
+          "zh": "反向路径可恢复的状态",
+          "en": "States restored in reverse travel"
+        }
+      },
+      {
+        "label": "MODULES",
+        "value": "12",
+        "note": {
+          "zh": "由同一主语释放的功能模块",
+          "en": "Functional modules released by one subject"
+        }
+      }
+    ]
+  },
+  "assets": {},
+  "motion": {
+    "desktop": {},
+    "mobile": {},
+    "reduced": "stable-states"
+  }
+}

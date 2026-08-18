@@ -33,6 +33,32 @@ npm run dev
 
 `npm run dev` 会先构建并同步全部实例，再启动目录服务器；`npm run dev:all` 是它的同义命令。生成的 `catalog/public/examples/` 不提交到 Git。
 
+## 安装 Agent Skills
+
+使用标准 Agent Skills CLI 安装：
+
+```bash
+npx skills add no7z/webmotion
+```
+
+CLI 会自动发现 `webmotion`、`webmotion-use`、`webmotion-tune`、`webmotion-audit` 和 `webmotion-pack`，并交互式选择安装范围与目标 Agent。建议安装完整集合，因为入口 Skill 会按任务调用其余四个工作流。
+
+只为 Codex 全局安装完整集合，并跳过交互确认：
+
+```bash
+npx skills add no7z/webmotion --skill '*' --agent codex --global --yes
+```
+
+当前 GitHub 仓库是私有的，因此安装者需要已有 Git 凭据、GitHub CLI 登录或 SSH 权限；仓库公开后同一命令可直接使用。CLI 自带更新、检查和删除能力：
+
+```bash
+npx skills list --global --agent codex
+npx skills update --global
+npx skills remove --global webmotion webmotion-use webmotion-tune webmotion-audit webmotion-pack
+```
+
+`webmotion-use` 内置了经过校验的模板 Registry，安装后不依赖原始仓库路径。安装完成后直接对 Agent 说“用 WebMotion 做一个网页”即可；如果当前任务没有立即发现它们，新建一个 Codex 任务。
+
 ## 模板目录
 
 | 编号 | 模板 | 体验身份 | 本地路由 | 状态 |
@@ -114,6 +140,10 @@ npm run templates:refresh
 # 将十个实例构建到目录站的 /examples/ 子路由
 npm run examples:sync
 
+# 更新并验证 npx 安装包内置的模板 Registry
+npm run skills:registry
+npm run skills:registry:check
+
 # 构建全部实例和最终目录站
 npm run build:all
 
@@ -135,6 +165,7 @@ webmotion/
 │   ├── template-sources/            # 通用生成模板的源文件
 │   ├── registry.mjs                 # 模板查看与安装命令
 │   ├── sync-examples.mjs            # 构建并同步实例子路由
+│   ├── sync-skill-registry.mjs      # 生成自包含的 Skill Registry
 │   └── dev-all.mjs                  # 单端口开发入口
 ├── skills/                           # WebMotion Agent Skills
 └── tests/                            # 独立 E2E 与体验验证项目

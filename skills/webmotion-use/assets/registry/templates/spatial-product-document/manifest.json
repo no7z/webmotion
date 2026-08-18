@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "spatial-product-document",
+  "name": "Spatial Product Document",
+  "version": "0.1.0",
+  "availability": "adapter",
+  "license": "CC0-1.0",
+  "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+  "experience": {
+    "spec": "E08",
+    "category": "spatially-enhanced-document",
+    "capabilities": [
+      "bounded-spatial-product-hero",
+      "standard-document-flow",
+      "semantic-structure-visualization",
+      "searchable-specifications",
+      "webgl-fallback",
+      "mobile-hero-reorder",
+      "reduced-motion-stable-pose"
+    ]
+  },
+  "adapters": [
+    {
+      "id": "react-r3f",
+      "available": true,
+      "path": "adapters/react-r3f",
+      "entry": "adapters/react-r3f/src/main.jsx",
+      "compatibility": {
+        "react": ">=19 <20",
+        "reactThreeFiber": ">=9 <10",
+        "three": ">=0.185 <0.186",
+        "vite": ">=8 <9"
+      }
+    }
+  ],
+  "assetSlots": [
+    {
+      "id": "product-model",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "product-copy",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "key-facts",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "specifications",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "fallback-poster",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    }
+  ],
+  "compatibility": {
+    "webmotion": ">=0.1.0",
+    "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+    "framework": "Framework-neutral contract with a react-r3f adapter"
+  },
+  "entrypoints": {
+    "contract": "contract.json",
+    "configExample": "config.example.json",
+    "configSchema": "schema/config.schema.json",
+    "qa": "qa/checkpoints.json",
+    "adapter": "adapters/react-r3f"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 159,
+      "sha256": "9bd38cd069a89596be4fff88ea500fb632f891732503f622af21e72494dac1a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 468,
+      "sha256": "cae969c3b41099edc28046aea9c5150348aa14681f3535804361cc495e168c6c"
+    },
+    {
+      "path": "adapters/react-r3f/ASSET_LICENSES.json",
+      "bytes": 41,
+      "sha256": "427bc853754c83bccc1baa0275170692c65b512c29978ce7d0407037b3409aed"
+    },
+    {
+      "path": "adapters/react-r3f/README.md",
+      "bytes": 213,
+      "sha256": "3fb3ebcc9ef3c42da40f4a79191464ce664f940c9594d505673e8fbdd9e9cd9e"
+    },
+    {
+      "path": "adapters/react-r3f/index.html",
+      "bytes": 617,
+      "sha256": "12ebb81c3b523ba88baaf224d57a939d508d91fd4a893dee7147ca417ca2c087"
+    },
+    {
+      "path": "adapters/react-r3f/package-lock.json",
+      "bytes": 34295,
+      "sha256": "4676f798fe548133fa655a3ecbffe7afa74aa9c57aaff2ff391574d06aa5c0c4"
+    },
+    {
+      "path": "adapters/react-r3f/package.json",
+      "bytes": 459,
+      "sha256": "9adeec218e4d771aec9944cccf9340213dab9f07c5ea4c3023fa7e947658a23e"
+    },
+    {
+      "path": "adapters/react-r3f/src/App.jsx",
+      "bytes": 16624,
+      "sha256": "58a3f7e1832c26aaf920105097c4fdd613f8f8b0c92ab47ba7ea5c871171c533"
+    },
+    {
+      "path": "adapters/react-r3f/src/Scene.jsx",
+      "bytes": 10407,
+      "sha256": "f3eaa3433c89e04174f8e6757e0b178e4dcd05e1130ab2a9a78c651400a84059"
+    },
+    {
+      "path": "adapters/react-r3f/src/main.jsx",
+      "bytes": 227,
+      "sha256": "ed0699c9db87e90f6a8817bab216f02f5ece0034bdb21d852e613f037dc00e7b"
+    },
+    {
+      "path": "adapters/react-r3f/src/motion.js",
+      "bytes": 2160,
+      "sha256": "ffd1821dcd070ab8bed1137fe35da74c8d037b7989057dce56c69f8647fe8708"
+    },
+    {
+      "path": "adapters/react-r3f/src/styles.css",
+      "bytes": 33467,
+      "sha256": "8360e27f6978b0833846e3b849f53eb8163e445318dbf55f16cf2d0b1c8291b7"
+    },
+    {
+      "path": "adapters/react-r3f/src/template.config.js",
+      "bytes": 4472,
+      "sha256": "7061e844ef4a126081bf9c6a6fb8b12d68de5400763d1fae69a8a1daa6d40e9c"
+    },
+    {
+      "path": "adapters/react-r3f/vite.config.js",
+      "bytes": 174,
+      "sha256": "14bd0baddda2d17f443e3c83ad431d7dc18ac79b6b7f8af0f81aa3d372260433"
+    },
+    {
+      "path": "config.example.json",
+      "bytes": 2244,
+      "sha256": "5458b2d479009fff198cd75a7f43b6dddf42efdf9c58a52c7860c61985f217eb"
+    },
+    {
+      "path": "contract.json",
+      "bytes": 2851,
+      "sha256": "6d7b2c781d0a3457509ad1d6a8a6a7bb061b7d2afd4dc9f019b6e10338f7bbf1"
+    },
+    {
+      "path": "qa/audit-0.1.0.md",
+      "bytes": 1843,
+      "sha256": "3dac819446d71c6f7fd7ae39b38f8f5a7e0762d628dcbff2206c74c5eb7be2e7"
+    },
+    {
+      "path": "qa/checkpoints.json",
+      "bytes": 2249,
+      "sha256": "4a106fb1cf4b0f237db257542d913f3f4b2118d08683bb4080b559483fb2e789"
+    },
+    {
+      "path": "schema/config.schema.json",
+      "bytes": 2759,
+      "sha256": "0225c293896121c189462460dba32a0a170100052ae6d2c4cbc83f39caad525e"
+    }
+  ]
+}

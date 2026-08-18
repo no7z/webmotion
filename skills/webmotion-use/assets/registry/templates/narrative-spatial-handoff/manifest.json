@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "narrative-spatial-handoff",
+  "name": "Narrative Spatial Handoff",
+  "version": "0.1.0",
+  "availability": "adapter",
+  "license": "CC0-1.0",
+  "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+  "experience": {
+    "spec": "E06",
+    "category": "narrative-to-spatial-index",
+    "capabilities": [
+      "two-act-interaction",
+      "explicit-control-handoff",
+      "scroll-narrative",
+      "click-spatial-index",
+      "synchronized-selection-record",
+      "keyboard-hotspots",
+      "mobile-index-serialization"
+    ]
+  },
+  "adapters": [
+    {
+      "id": "react-r3f",
+      "available": true,
+      "path": "adapters/react-r3f",
+      "entry": "adapters/react-r3f/src/main.jsx",
+      "compatibility": {
+        "react": ">=19 <20",
+        "reactThreeFiber": ">=9 <10",
+        "three": ">=0.185 <0.186",
+        "vite": ">=8 <9"
+      }
+    }
+  ],
+  "assetSlots": [
+    {
+      "id": "narrative-copy",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "spatial-base",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "hotspot-records",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "selection-camera-poses",
+      "type": "motion-config",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    }
+  ],
+  "compatibility": {
+    "webmotion": ">=0.1.0",
+    "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+    "framework": "Framework-neutral contract with a react-r3f adapter"
+  },
+  "entrypoints": {
+    "contract": "contract.json",
+    "configExample": "config.example.json",
+    "configSchema": "schema/config.schema.json",
+    "qa": "qa/checkpoints.json",
+    "adapter": "adapters/react-r3f"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 159,
+      "sha256": "9bd38cd069a89596be4fff88ea500fb632f891732503f622af21e72494dac1a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 521,
+      "sha256": "53f0e4592804dfcf3ce0dbcbf8978b8fe85cbdc19cbc9c2789c0b096d67b54a6"
+    },
+    {
+      "path": "adapters/react-r3f/ASSET_LICENSES.json",
+      "bytes": 41,
+      "sha256": "427bc853754c83bccc1baa0275170692c65b512c29978ce7d0407037b3409aed"
+    },
+    {
+      "path": "adapters/react-r3f/README.md",
+      "bytes": 214,
+      "sha256": "9f8f4e277468382a27e21397dcf85b23369e3325f5f6ae9f10ac4ded7594b978"
+    },
+    {
+      "path": "adapters/react-r3f/index.html",
+      "bytes": 618,
+      "sha256": "bb86fbf8c1b23760ab07c912d3a796310c66ec40425e93c4d626d3e5136d7e54"
+    },
+    {
+      "path": "adapters/react-r3f/package-lock.json",
+      "bytes": 34297,
+      "sha256": "802c29cf4d42c137d7458ce86dbb0a35fcf302725ff5f6ebfde83e5c4d00c28b"
+    },
+    {
+      "path": "adapters/react-r3f/package.json",
+      "bytes": 460,
+      "sha256": "a4cc39901bb24adbdbf57e1b4d4e4c4cee4e412ee68564ce3b033e6338fb4b76"
+    },
+    {
+      "path": "adapters/react-r3f/src/App.jsx",
+      "bytes": 16624,
+      "sha256": "58a3f7e1832c26aaf920105097c4fdd613f8f8b0c92ab47ba7ea5c871171c533"
+    },
+    {
+      "path": "adapters/react-r3f/src/Scene.jsx",
+      "bytes": 10407,
+      "sha256": "f3eaa3433c89e04174f8e6757e0b178e4dcd05e1130ab2a9a78c651400a84059"
+    },
+    {
+      "path": "adapters/react-r3f/src/main.jsx",
+      "bytes": 227,
+      "sha256": "ed0699c9db87e90f6a8817bab216f02f5ece0034bdb21d852e613f037dc00e7b"
+    },
+    {
+      "path": "adapters/react-r3f/src/motion.js",
+      "bytes": 2160,
+      "sha256": "ffd1821dcd070ab8bed1137fe35da74c8d037b7989057dce56c69f8647fe8708"
+    },
+    {
+      "path": "adapters/react-r3f/src/styles.css",
+      "bytes": 33467,
+      "sha256": "8360e27f6978b0833846e3b849f53eb8163e445318dbf55f16cf2d0b1c8291b7"
+    },
+    {
+      "path": "adapters/react-r3f/src/template.config.js",
+      "bytes": 5508,
+      "sha256": "69f981c0cb1ca2aac9dc9d1befb11fedda67a17019a914d2da659320abff194d"
+    },
+    {
+      "path": "adapters/react-r3f/vite.config.js",
+      "bytes": 174,
+      "sha256": "0b80e8858f14d65b6937d160a657cccbeaba4d1de50e2c1f1765f6de37659b9f"
+    },
+    {
+      "path": "config.example.json",
+      "bytes": 3382,
+      "sha256": "d9c981a10d066f5f81c68fa62c381e459a4f4715f7fd24fe124e457c2e87e262"
+    },
+    {
+      "path": "contract.json",
+      "bytes": 2935,
+      "sha256": "cda2ee9e1328b7c14245b1431c3e3bf323285924bf543a1ac606f91e739ebe2b"
+    },
+    {
+      "path": "qa/audit-0.1.0.md",
+      "bytes": 1862,
+      "sha256": "582e4f80a4c01db86222c817f41cbe211c162b7682d869e9884cb97c8187bdf1"
+    },
+    {
+      "path": "qa/checkpoints.json",
+      "bytes": 2289,
+      "sha256": "c7edfabdfba8599667f00e0ca52cafae2af019044d06e4ade8605efbc49e47fa"
+    },
+    {
+      "path": "schema/config.schema.json",
+      "bytes": 2761,
+      "sha256": "eb7141061afe91caa9bb5e5cb258cc023ecfac0e9997392266ccc0083400e98c"
+    }
+  ]
+}

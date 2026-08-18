@@ -1,0 +1,118 @@
+{
+  "locale": {
+    "default": "zh",
+    "supported": [
+      "zh",
+      "en"
+    ]
+  },
+  "content": {
+    "hero": {
+      "zh": "不要滚动故事，直接选择空间。",
+      "en": "Do not scroll a story. Select the space."
+    },
+    "intro": {
+      "zh": "当用户需要比较楼层与房间，点击比滚动顺序更诚实。",
+      "en": "When readers compare floors and rooms, direct selection is more honest than a forced scroll sequence."
+    },
+    "chapters": [],
+    "items": [
+      {
+        "code": "L1-A",
+        "level": 0,
+        "x": "18%",
+        "y": "58%",
+        "title": {
+          "zh": "到达大厅",
+          "en": "Arrival hall"
+        },
+        "value": "184 m²",
+        "note": {
+          "zh": "入口层连接公共展厅、服务台和无障碍路线。",
+          "en": "The arrival level connects public galleries, service desk, and accessible circulation."
+        }
+      },
+      {
+        "code": "L1-B",
+        "level": 0,
+        "x": "58%",
+        "y": "70%",
+        "title": {
+          "zh": "材料档案",
+          "en": "Material archive"
+        },
+        "value": "96 m²",
+        "note": {
+          "zh": "开放抽屉保存可触摸样本和出处记录。",
+          "en": "Open drawers keep tactile samples with provenance records."
+        }
+      },
+      {
+        "code": "L2-A",
+        "level": 1,
+        "x": "30%",
+        "y": "50%",
+        "title": {
+          "zh": "研究阅览室",
+          "en": "Research room"
+        },
+        "value": "142 m²",
+        "note": {
+          "zh": "二层安静阅读区与数字档案并置。",
+          "en": "A quiet second-floor reading room sits beside the digital archive."
+        }
+      },
+      {
+        "code": "L2-B",
+        "level": 1,
+        "x": "68%",
+        "y": "44%",
+        "title": {
+          "zh": "修复工作室",
+          "en": "Conservation studio"
+        },
+        "value": "118 m²",
+        "note": {
+          "zh": "观察窗让维护工作成为展览证据。",
+          "en": "An observation window makes conservation work part of the evidence."
+        }
+      },
+      {
+        "code": "L3-A",
+        "level": 2,
+        "x": "38%",
+        "y": "40%",
+        "title": {
+          "zh": "屋顶论坛",
+          "en": "Roof forum"
+        },
+        "value": "210 m²",
+        "note": {
+          "zh": "可变座席面向城市天际线和公共讲座。",
+          "en": "Flexible seating faces the skyline and public lectures."
+        }
+      },
+      {
+        "code": "L3-B",
+        "level": 2,
+        "x": "72%",
+        "y": "58%",
+        "title": {
+          "zh": "气候露台",
+          "en": "Climate terrace"
+        },
+        "value": "166 m²",
+        "note": {
+          "zh": "雨水、遮阳和本地植物成为实时教学系统。",
+          "en": "Rainwater, shade, and native plants form a live teaching system."
+        }
+      }
+    ]
+  },
+  "assets": {},
+  "motion": {
+    "desktop": {},
+    "mobile": {},
+    "reduced": "stable-states"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "fullscreen-state-machine",
+  "name": "Fullscreen State Machine",
+  "version": "0.1.0",
+  "availability": "adapter",
+  "license": "CC0-1.0",
+  "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+  "experience": {
+    "spec": "E03",
+    "category": "internal-fullscreen-state-machine",
+    "capabilities": [
+      "internal-scroll-owner",
+      "discrete-fullscreen-states",
+      "persistent-object",
+      "synchronized-copy-camera-state",
+      "explicit-exit",
+      "keyboard-stage-navigation",
+      "mobile-stage-recomposition"
+    ]
+  },
+  "adapters": [
+    {
+      "id": "react-r3f",
+      "available": true,
+      "path": "adapters/react-r3f",
+      "entry": "adapters/react-r3f/src/main.jsx",
+      "compatibility": {
+        "react": ">=19 <20",
+        "reactThreeFiber": ">=9 <10",
+        "three": ">=0.185 <0.186",
+        "vite": ">=8 <9"
+      }
+    }
+  ],
+  "assetSlots": [
+    {
+      "id": "hero-object",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "state-copy",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "state-materials",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    },
+    {
+      "id": "state-camera-poses",
+      "type": "motion-config",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-r3f/src/template.config.js"
+    }
+  ],
+  "compatibility": {
+    "webmotion": ">=0.1.0",
+    "browser": "Modern browser with WebGL2 recommended; readable fallback required",
+    "framework": "Framework-neutral contract with a react-r3f adapter"
+  },
+  "entrypoints": {
+    "contract": "contract.json",
+    "configExample": "config.example.json",
+    "configSchema": "schema/config.schema.json",
+    "qa": "qa/checkpoints.json",
+    "adapter": "adapters/react-r3f"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 159,
+      "sha256": "9bd38cd069a89596be4fff88ea500fb632f891732503f622af21e72494dac1a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 541,
+      "sha256": "77cdf5ba178b6d090c3953d4c283deac86dc4bb301dc445df20bc1c7df379f0d"
+    },
+    {
+      "path": "adapters/react-r3f/ASSET_LICENSES.json",
+      "bytes": 41,
+      "sha256": "427bc853754c83bccc1baa0275170692c65b512c29978ce7d0407037b3409aed"
+    },
+    {
+      "path": "adapters/react-r3f/README.md",
+      "bytes": 213,
+      "sha256": "4ddd11f051c95a3e9aff47e64ca5d95eb6f372625c78f2ee83ffab2980b51cd8"
+    },
+    {
+      "path": "adapters/react-r3f/index.html",
+      "bytes": 617,
+      "sha256": "03106df94561bb91f4dbc90d8f7c0164af1d5cb4dc740e340b205bfd0aa912fa"
+    },
+    {
+      "path": "adapters/react-r3f/package-lock.json",
+      "bytes": 34295,
+      "sha256": "9355dd3a2ba75bc85956c68c6397d2bdfb97a44fbc5d5fdcf93fee123bf9b307"
+    },
+    {
+      "path": "adapters/react-r3f/package.json",
+      "bytes": 459,
+      "sha256": "c5295e7ee1c7d7b7d33e22e55ff6e57fa15c62507f6f41c4af05b955a9b2f653"
+    },
+    {
+      "path": "adapters/react-r3f/src/App.jsx",
+      "bytes": 16624,
+      "sha256": "58a3f7e1832c26aaf920105097c4fdd613f8f8b0c92ab47ba7ea5c871171c533"
+    },
+    {
+      "path": "adapters/react-r3f/src/Scene.jsx",
+      "bytes": 10407,
+      "sha256": "f3eaa3433c89e04174f8e6757e0b178e4dcd05e1130ab2a9a78c651400a84059"
+    },
+    {
+      "path": "adapters/react-r3f/src/main.jsx",
+      "bytes": 227,
+      "sha256": "ed0699c9db87e90f6a8817bab216f02f5ece0034bdb21d852e613f037dc00e7b"
+    },
+    {
+      "path": "adapters/react-r3f/src/motion.js",
+      "bytes": 2160,
+      "sha256": "ffd1821dcd070ab8bed1137fe35da74c8d037b7989057dce56c69f8647fe8708"
+    },
+    {
+      "path": "adapters/react-r3f/src/styles.css",
+      "bytes": 33467,
+      "sha256": "8360e27f6978b0833846e3b849f53eb8163e445318dbf55f16cf2d0b1c8291b7"
+    },
+    {
+      "path": "adapters/react-r3f/src/template.config.js",
+      "bytes": 4227,
+      "sha256": "317d97ba6910ba640ea553831731e2276a4446c0e1a2b6033bb6f8f58354580a"
+    },
+    {
+      "path": "adapters/react-r3f/vite.config.js",
+      "bytes": 174,
+      "sha256": "07c7a491f33a5c7c30e6bb6da28870b33065e47062529bd0899ee063e2ee88db"
+    },
+    {
+      "path": "config.example.json",
+      "bytes": 1830,
+      "sha256": "bd74f1c5a5a4e12497d8c75d8fe29da55730dec4941546b3e911cbadb2fef904"
+    },
+    {
+      "path": "contract.json",
+      "bytes": 2990,
+      "sha256": "02b26a6db6c433c3669e718bc0d22a5e7ffc390471fce85a6f28f42e38166663"
+    },
+    {
+      "path": "qa/audit-0.1.0.md",
+      "bytes": 1875,
+      "sha256": "bb3babb67f40189b4d78103b4d86f3ac214baf179f43a22c6c5ae4e4915793e1"
+    },
+    {
+      "path": "qa/checkpoints.json",
+      "bytes": 2291,
+      "sha256": "fc4e417b790e5d1bb003096a559f0976bab9528fa0452b4638738b9a4b0b8fb4"
+    },
+    {
+      "path": "schema/config.schema.json",
+      "bytes": 2759,
+      "sha256": "c1b47cbce16a1f8fded098ceb6e1c58800cc64616a43cc79333f435333dc8ded"
+    }
+  ]
+}
