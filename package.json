@@ -11,7 +11,10 @@
     "registry:list": "node scripts/registry.mjs list",
     "catalog:sync": "npm --prefix catalog run sync",
     "catalog:build": "npm --prefix catalog run build",
+    "dev": "node scripts/dev-all.mjs",
     "dev:all": "node scripts/dev-all.mjs",
+    "dev:template": "node scripts/dev-template.mjs",
+    "examples:sync": "node scripts/sync-examples.mjs",
     "build:all": "node scripts/build-all.mjs"
   }
 }

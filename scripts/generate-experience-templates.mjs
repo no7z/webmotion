@@ -277,11 +277,17 @@ for (const definition of definitions) {
 const indexPath = path.join(root, "registry/index.json");
 const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
 for (const entry of index.templates) {
-  if (entry.id === "foreground-product") entry.experienceSpec = "E02";
-  if (entry.id === "spatial-editorial-journey") entry.experienceSpec = "E04";
+  if (entry.id === "foreground-product") {
+    entry.experienceSpec = "E02";
+    entry.demo = { url: `/examples/${entry.id}/`, label: "打开实例" };
+  }
+  if (entry.id === "spatial-editorial-journey") {
+    entry.experienceSpec = "E04";
+    entry.demo = { url: `/examples/${entry.id}/`, label: "打开实例" };
+  }
 }
 for (const definition of definitions) {
-  const entry = { id: definition.id, name: definition.displayName, version: "0.1.0", availability: "adapter", experienceSpec: definition.code, category: definition.category, summary: definition.summary, demo: { url: `http://localhost:${definition.port}/`, label: "打开实例" }, license: "CC0-1.0" };
+  const entry = { id: definition.id, name: definition.displayName, version: "0.1.0", availability: "adapter", experienceSpec: definition.code, category: definition.category, summary: definition.summary, demo: { url: `/examples/${definition.id}/`, label: "打开实例" }, license: "CC0-1.0" };
   const current = index.templates.findIndex((item) => item.id === definition.id);
   if (current >= 0) index.templates[current] = entry; else index.templates.push(entry);
 }

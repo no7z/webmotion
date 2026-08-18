@@ -1004,7 +1004,7 @@ a:focus-visible {
   background: #f2f0e8;
   color: #13221d;
 }
-.font-choice { position: absolute; z-index: 140; top: 78px; right: 18px; display: flex; align-items: center; gap: 8px; padding: 5px 5px 5px 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 99px; color: #f5f4ef; background: rgba(6,16,25,.74); box-shadow: 0 10px 35px rgba(0,0,0,.18); backdrop-filter: blur(18px); font: 9px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.font-choice { position: absolute; z-index: 29; top: 78px; right: 18px; display: flex; align-items: center; gap: 8px; padding: 5px 5px 5px 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 99px; color: #f5f4ef; background: rgba(6,16,25,.74); box-shadow: 0 10px 35px rgba(0,0,0,.18); backdrop-filter: blur(18px); font: 9px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .font-choice select { min-width: 88px; min-height: 30px; padding: 0 9px; border: 0; border-radius: 99px; color: #061019; background: #edf1ee; cursor: pointer; font: 11px/1.2 var(--font-sans-cjk); }
 .font-choice select:focus-visible { outline: 2px solid #f0c92f; outline-offset: 2px; }
 

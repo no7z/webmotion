@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "registryVersion": "0.2.0",
-  "generatedAt": "2026-08-15T21:39:34.048Z",
+  "generatedAt": "2026-08-18T07:40:49.467Z",
   "templates": [
     {
       "order": 1,
@@ -13,7 +13,7 @@
       "category": "continuous-composition-morph",
       "summary": "One persistent subject continuously unfolds into a distributed system before releasing an ordinary information document.",
       "demo": {
-        "url": "http://localhost:4193/",
+        "url": "/examples/system-morph/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -103,7 +103,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 116665,
+      "packageBytes": 116871,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 system-morph 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -117,7 +117,7 @@
       "category": "guided-spatial-journey",
       "summary": "A scroll-led information page with a persistent foreground product crossing editorial chapters.",
       "demo": {
-        "url": "http://localhost:4191/",
+        "url": "/examples/foreground-product/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -210,7 +210,7 @@
       "category": "internal-fullscreen-state-machine",
       "summary": "An internal full-screen scroller advances a persistent instrument through three discrete states while the document itself stays fixed.",
       "demo": {
-        "url": "http://localhost:4194/",
+        "url": "/examples/fullscreen-state-machine/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -293,7 +293,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 115150,
+      "packageBytes": 115356,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 fullscreen-state-machine 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -307,7 +307,7 @@
       "category": "guided-spatial-journey",
       "summary": "A long-form editorial journey with a 2D-to-3D terrain morph, a continuous horizontal spatial traverse, and distinct information-first chapter compositions.",
       "demo": {
-        "url": "http://localhost:4192/",
+        "url": "/examples/spatial-editorial-journey/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -408,7 +408,7 @@
       },
       "provenance": "Original WebMotion framework-neutral contract, React Three Fiber adapter, generated demonstration imagery, fictional copy, and procedural 3D. No third-party brand assets, source-site media, or copied implementation code are included.",
       "fileCount": 24,
-      "packageBytes": 876222,
+      "packageBytes": 876299,
       "qaGateCount": 8,
       "prompt": "使用 WebMotion 的 spatial-editorial-journey 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -422,7 +422,7 @@
       "category": "guided-camera-itinerary",
       "summary": "Document scroll drives a continuous camera itinerary through room scale, object detail, and evidence plaque stops.",
       "demo": {
-        "url": "http://localhost:4195/",
+        "url": "/examples/guided-camera-route/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -512,7 +512,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 115082,
+      "packageBytes": 115288,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 guided-camera-route 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -526,7 +526,7 @@
       "category": "narrative-to-spatial-index",
       "summary": "A long scroll narrative visibly ends before control passes to a clickable globe or hotspot index.",
       "demo": {
-        "url": "http://localhost:4196/",
+        "url": "/examples/narrative-spatial-handoff/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -609,7 +609,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 117900,
+      "packageBytes": 118106,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 narrative-spatial-handoff 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -623,7 +623,7 @@
       "category": "editorial-media-choreography",
       "summary": "Typography, media density, whitespace, and one bounded spatial insert create depth without a persistent 3D object.",
       "demo": {
-        "url": "http://localhost:4197/",
+        "url": "/examples/editorial-media-rhythm/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -713,7 +713,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 115417,
+      "packageBytes": 115623,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 editorial-media-rhythm 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -727,7 +727,7 @@
       "category": "spatially-enhanced-document",
       "summary": "One spatial product hero explains a structural promise, then yields to an ordinary specifications and evidence document.",
       "demo": {
-        "url": "http://localhost:4198/",
+        "url": "/examples/spatial-product-document/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -817,7 +817,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 115523,
+      "packageBytes": 115729,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 spatial-product-document 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -831,7 +831,7 @@
       "category": "non-scroll-spatial-navigation",
       "summary": "Floor and room buttons directly control a spatial building model and an information panel; scroll is not the navigation model.",
       "demo": {
-        "url": "http://localhost:4199/",
+        "url": "/examples/click-spatial-index/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -914,7 +914,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 19,
-      "packageBytes": 117003,
+      "packageBytes": 117209,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 click-spatial-index 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     },
@@ -928,7 +928,7 @@
       "category": "prerendered-spatial-media-document",
       "summary": "Pre-rendered spatial plates provide visual scale and atmosphere inside an ordinary corporate information document with no WebGL runtime.",
       "demo": {
-        "url": "http://localhost:4200/",
+        "url": "/examples/prerendered-spatial-document/",
         "label": "打开实例"
       },
       "license": "CC0-1.0",
@@ -1016,7 +1016,7 @@
       },
       "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
       "fileCount": 22,
-      "packageBytes": 101022,
+      "packageBytes": 101228,
       "qaGateCount": 7,
       "prompt": "使用 WebMotion 的 prerendered-spatial-document 模板创建网页。请交互式询问内容、素材、语言和轨迹要求。"
     }

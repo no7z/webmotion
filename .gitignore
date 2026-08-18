@@ -13,3 +13,7 @@ dist/
 
 # Files uploaded through the local WebMotion replacement workbench.
 **/public/webmotion-assets/
+
+# Generated single-origin example builds.
+catalog/public/examples/
+.gstack/
