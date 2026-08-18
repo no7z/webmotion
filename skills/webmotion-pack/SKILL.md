@@ -22,9 +22,9 @@ Put implementation details in adapters such as `react-r3f`, `vue-tresjs`, or `va
 ## Package
 
 1. Prepare a staging directory containing `contract.json`, `schema/config.schema.json`, `qa/checkpoints.json`, optional preview media, and explicit adapter files.
-2. Create a manifest draft from the staging directory:
+2. Create a manifest draft with this Skill's bundled `scripts/pack-template.mjs`:
 
-   `node scripts/pack-template.mjs --source <staging-dir> --id <template-id> --name <display-name> --version <semver> --output <manifest-path>`
+   `node <bundled-script> --source <staging-dir> --id <template-id> --name <display-name> --version <semver> --output <manifest-path>`
 
 3. Review every listed file and license. The script rejects path traversal, symlinks, secrets-like files, and package lifecycle scripts.
 4. Validate the manifest against `references/manifest-requirements.md`.

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "source": "WebMotion framework-neutral experience taxonomy",
+  "types": [
+    { "id": "E01", "name": "连续空间构图变形", "template": "system-morph", "input": "document-scroll", "mapping": "continuous-composition" },
+    { "id": "E02", "name": "语义对象状态变换", "template": "foreground-product", "input": "document-scroll", "mapping": "named-object-states" },
+    { "id": "E03", "name": "全屏滚动状态机", "template": "fullscreen-state-machine", "input": "internal-scroll", "mapping": "discrete-fullscreen-states" },
+    { "id": "E04", "name": "沉浸式章节长叙事", "template": "spatial-editorial-journey", "input": "document-scroll", "mapping": "longform-spatial-chapters" },
+    { "id": "E05", "name": "引导式空间旅程", "template": "guided-camera-route", "input": "document-scroll", "mapping": "guided-camera-itinerary" },
+    { "id": "E06", "name": "叙事到空间索引交接", "template": "narrative-spatial-handoff", "input": "scroll-then-click", "mapping": "narrative-to-index-handoff" },
+    { "id": "E07", "name": "编辑式媒体编舞", "template": "editorial-media-rhythm", "input": "document-flow", "mapping": "editorial-density-choreography" },
+    { "id": "E08", "name": "空间视觉增强的普通文档流", "template": "spatial-product-document", "input": "document-flow", "mapping": "spatial-accent-then-document" },
+    { "id": "E09", "name": "非滚动空间导航", "template": "click-spatial-index", "input": "click", "mapping": "hierarchical-spatial-selection" },
+    { "id": "E10", "name": "预渲染空间媒体文档流", "template": "prerendered-spatial-document", "input": "document-flow", "mapping": "media-playback-document" }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "locale": {
+    "default": "zh",
+    "supported": [
+      "zh",
+      "en"
+    ]
+  },
+  "content": {
+    "hero": {
+      "zh": "空间可以预渲染，信息不能被烘焙进图片。",
+      "en": "Space may be pre-rendered. Information must not be baked into imagery."
+    },
+    "intro": {
+      "zh": "当用户只需要理解尺度、剖面和材质，稳定媒体比实时场景更合适；所有结论仍由文档承担。",
+      "en": "When readers only need scale, section, and material, stable media is a better carrier than realtime graphics; the document still carries every conclusion."
+    },
+    "chapters": [
+      {
+        "id": "01",
+        "title": {
+          "zh": "用一幅总图建立基础设施尺度。",
+          "en": "Use one master plate to establish infrastructure scale."
+        },
+        "body": {
+          "zh": "重复单元、维护通道和周边能源设施在同一画面中可比较。",
+          "en": "Repeated units, service routes, and surrounding energy systems remain comparable in one frame."
+        }
+      },
+      {
+        "id": "02",
+        "title": {
+          "zh": "再用剖面解释运营关系。",
+          "en": "Then use sections to explain operations."
+        },
+        "body": {
+          "zh": "局部图回答冷却、检修和材料寿命，不承担导航。",
+          "en": "Detail plates answer cooling, service, and material-life questions without becoming navigation."
+        }
+      }
+    ],
+    "items": [
+      {
+        "label": "CAPACITY",
+        "value": "280 MW"
+      },
+      {
+        "label": "MODULES",
+        "value": "640"
+      },
+      {
+        "label": "UPTIME",
+        "value": "99.2%"
+      },
+      {
+        "label": "WATER",
+        "value": "CLOSED LOOP"
+      }
+    ]
+  },
+  "assets": {},
+  "motion": {
+    "desktop": {},
+    "mobile": {},
+    "reduced": "static-media"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "prerendered-spatial-document",
+  "name": "Pre-rendered Spatial Document",
+  "version": "0.1.0",
+  "availability": "adapter",
+  "license": "CC0-1.0",
+  "provenance": "Original WebMotion contract, fictional bilingual content, procedural visuals, and adapter code. No third-party brand assets or copied implementation code.",
+  "experience": {
+    "spec": "E10",
+    "category": "prerendered-spatial-media-document",
+    "capabilities": [
+      "zero-webgl-runtime",
+      "prerendered-spatial-media",
+      "ordinary-document-flow",
+      "responsive-picture-slots",
+      "media-failure-readable",
+      "mobile-responsive-crops",
+      "reduced-motion-stills"
+    ]
+  },
+  "adapters": [
+    {
+      "id": "react-media",
+      "available": true,
+      "path": "adapters/react-media",
+      "entry": "adapters/react-media/src/main.jsx",
+      "compatibility": {
+        "react": ">=19 <20",
+        "vite": ">=8 <9"
+      }
+    }
+  ],
+  "assetSlots": [
+    {
+      "id": "hero-plate",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-media/src/template.config.js"
+    },
+    {
+      "id": "section-plate",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-media/src/template.config.js"
+    },
+    {
+      "id": "material-plate",
+      "type": "replaceable-media",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-media/src/template.config.js"
+    },
+    {
+      "id": "document-copy",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-media/src/template.config.js"
+    },
+    {
+      "id": "technical-records",
+      "type": "structured-content",
+      "required": true,
+      "distribution": "replaceable-demo-included",
+      "config": "adapters/react-media/src/template.config.js"
+    }
+  ],
+  "compatibility": {
+    "webmotion": ">=0.1.0",
+    "browser": "Modern browser; no WebGL required",
+    "framework": "Framework-neutral contract with a react-media adapter"
+  },
+  "entrypoints": {
+    "contract": "contract.json",
+    "configExample": "config.example.json",
+    "configSchema": "schema/config.schema.json",
+    "qa": "qa/checkpoints.json",
+    "adapter": "adapters/react-media"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 159,
+      "sha256": "9bd38cd069a89596be4fff88ea500fb632f891732503f622af21e72494dac1a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 529,
+      "sha256": "c6248de4139f63acb81c3fd4422d09c194895cf78b69896b6dc4b8f075429b8b"
+    },
+    {
+      "path": "adapters/react-media/ASSET_LICENSES.json",
+      "bytes": 501,
+      "sha256": "0cef13c5546a6aeadb67383348f81000780983cad72260f591ff27bc8cc91e33"
+    },
+    {
+      "path": "adapters/react-media/README.md",
+      "bytes": 218,
+      "sha256": "c2dce6250a9fabf2342bd62d4bcf09c9bad2006cced623eaa2daf1c1ef6017ef"
+    },
+    {
+      "path": "adapters/react-media/index.html",
+      "bytes": 622,
+      "sha256": "ad1946b8ed20a68edc9bfc74aef7a5eab2699ff28102c20612dc05a831963e7b"
+    },
+    {
+      "path": "adapters/react-media/package-lock.json",
+      "bytes": 26435,
+      "sha256": "a1af38e490137f43ca691432a15139e0cb42638b88d00b01526f82ecd17e3f7c"
+    },
+    {
+      "path": "adapters/react-media/package.json",
+      "bytes": 402,
+      "sha256": "751b1307283579055bac1b4a9a4d32304130074b2dd51d8bed7b8dce2d207997"
+    },
+    {
+      "path": "adapters/react-media/public/media/detail-a.svg",
+      "bytes": 624,
+      "sha256": "47630006409165b851596b624ac5dd6abc50510dd2a9cf6f97ea082edf2dd0d8"
+    },
+    {
+      "path": "adapters/react-media/public/media/detail-b.svg",
+      "bytes": 653,
+      "sha256": "f813bc99d0ae7ce06a134247cfd2291b67b0a23759924713d906449450b6bacb"
+    },
+    {
+      "path": "adapters/react-media/public/media/hero.svg",
+      "bytes": 2338,
+      "sha256": "772b5955721870e45098b2f21771808d30cb87f52fdce533ae37d3f66e5b3376"
+    },
+    {
+      "path": "adapters/react-media/src/App.jsx",
+      "bytes": 16624,
+      "sha256": "58a3f7e1832c26aaf920105097c4fdd613f8f8b0c92ab47ba7ea5c871171c533"
+    },
+    {
+      "path": "adapters/react-media/src/Scene.jsx",
+      "bytes": 49,
+      "sha256": "19419edeb527e8d1e8dc314e575b74b24741fef9750fccd7657bf4f3d0ff63de"
+    },
+    {
+      "path": "adapters/react-media/src/main.jsx",
+      "bytes": 227,
+      "sha256": "ed0699c9db87e90f6a8817bab216f02f5ece0034bdb21d852e613f037dc00e7b"
+    },
+    {
+      "path": "adapters/react-media/src/motion.js",
+      "bytes": 2160,
+      "sha256": "ffd1821dcd070ab8bed1137fe35da74c8d037b7989057dce56c69f8647fe8708"
+    },
+    {
+      "path": "adapters/react-media/src/styles.css",
+      "bytes": 33467,
+      "sha256": "8360e27f6978b0833846e3b849f53eb8163e445318dbf55f16cf2d0b1c8291b7"
+    },
+    {
+      "path": "adapters/react-media/src/template.config.js",
+      "bytes": 4385,
+      "sha256": "2901b12e2ab07603e27052bc72c14fc0255d9e831f2e18e2f2e41c614b80adc4"
+    },
+    {
+      "path": "adapters/react-media/vite.config.js",
+      "bytes": 174,
+      "sha256": "d2979b2eb6a0e4fc3a4653b81e301655c11911a913b1fa89c0a509686b937c23"
+    },
+    {
+      "path": "config.example.json",
+      "bytes": 1898,
+      "sha256": "2131417c6bba1fec29f3b7cde8d41acc037cb47f168bc0c1f9fae153c3c9109d"
+    },
+    {
+      "path": "contract.json",
+      "bytes": 2881,
+      "sha256": "7a928ac75bc901bf89ce5bb6ed8cdc9b57acd262e698db4eb79e3887ce62a51b"
+    },
+    {
+      "path": "qa/audit-0.1.0.md",
+      "bytes": 1813,
+      "sha256": "18076d47d7352402c416696619e7289b5aafcf69b385b98e6791c75fa0cc6122"
+    },
+    {
+      "path": "qa/checkpoints.json",
+      "bytes": 2301,
+      "sha256": "94f34fd1f6997e2cea12ce154d75281ced32dd3b52d053de2b123d62f869dfc5"
+    },
+    {
+      "path": "schema/config.schema.json",
+      "bytes": 2768,
+      "sha256": "d22b49f48f5214a7e7092aab45990ed7a2a2d233586d36fe437e84a999dd3bf9"
+    }
+  ]
+}

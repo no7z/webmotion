@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://webmotion.local/schemas/fullscreen-state-machine.config.schema.json",
+  "title": "Fullscreen State Machine configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "locale",
+    "content",
+    "motion"
+  ],
+  "properties": {
+    "locale": {
+      "type": "object",
+      "required": [
+        "default",
+        "supported"
+      ],
+      "properties": {
+        "default": {
+          "type": "string"
+        },
+        "supported": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": [
+        "hero",
+        "chapters"
+      ],
+      "properties": {
+        "hero": {
+          "$ref": "#/$defs/localized"
+        },
+        "intro": {
+          "$ref": "#/$defs/localized"
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/chapter"
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "motion": {
+      "type": "object",
+      "required": [
+        "desktop",
+        "mobile",
+        "reduced"
+      ],
+      "properties": {
+        "desktop": {
+          "type": "object"
+        },
+        "mobile": {
+          "type": "object"
+        },
+        "reduced": {
+          "enum": [
+            "stable-states",
+            "direct-selection",
+            "static-media"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": [
+        "zh",
+        "en"
+      ],
+      "properties": {
+        "zh": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "body"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/localized"
+        },
+        "body": {
+          "$ref": "#/$defs/localized"
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "src",
+        "license",
+        "provenance"
+      ],
+      "properties": {
+        "src": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

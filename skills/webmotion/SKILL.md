@@ -9,7 +9,7 @@ Route the request to one focused WebMotion workflow. Never ask the user to type 
 
 ## Start
 
-1. Run `node scripts/detect-workspace.mjs` from the current working directory.
+1. Run this Skill's bundled `scripts/detect-workspace.mjs`, passing the current working directory as its first argument.
 2. Read applicable `AGENTS.md` files before changing a project.
 3. Infer the current workspace, framework, package manager, and whether `.webmotion/active.json` exists.
 4. Ask only for missing creative decisions, one short question at a time. Prefer visible choices over free-form answers.

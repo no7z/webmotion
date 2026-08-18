@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "template": "spatial-editorial-journey",
+  "identity": {
+    "category": "guided-spatial-journey",
+    "informationGoal": "Explain a long-form editorial subject through a continuous spatial journey while keeping reading and navigation primary.",
+    "composition": "A full-viewport WebGL world sits behind seven materially different editorial chapters: an opening field, a 2D-to-3D source transformation, an embedded horizontal traverse, and a sequence of photographic, archival, typographic, particle, map, and closing compositions.",
+    "interaction": "Native vertical wheel, touch, and keyboard scrolling drive one continuous story state. One declared chapter maps vertical travel into a reversible horizontal editorial traverse without capturing or replacing native scrolling.",
+    "semantic3d": "The opening source image becomes displaced terrain; camera movement reveals the same spatial system from new evidence-bearing viewpoints; later particle and material states explain the active chapter rather than acting as a decorative viewer."
+  },
+  "invariants": [
+    "The document remains an information website with readable headings, body copy, facts, captions, and route navigation.",
+    "Every chapter has a distinct composition role; changing only navigation or copy placement is not sufficient.",
+    "The 2D source image and the 3D terrain are two states of the same subject and must morph continuously.",
+    "The vertical-to-horizontal traverse remains scrubbed by native document progress and is reversible at every point.",
+    "Adjacent camera trajectories share an explicit boundary keyframe; camera position and gaze cannot switch formulas on different endpoints.",
+    "No important copy or control is accidentally obscured by WebGL, images, or transitional panels.",
+    "Desktop and mobile use separately authored camera paths and compositions.",
+    "Reduced motion disables smoothing and exposes every chapter in a stable readable state."
+  ],
+  "stateModel": {
+    "globalProgress": "A clamped 0-to-1 value derived from the complete document scroll range.",
+    "chapterLocal": "Each chapter derives a clamped local progress from its own scroll travel.",
+    "chapterPresence": "A reversible eased value controls chapter visibility and lets neighboring chapters blend without a one-frame swap.",
+    "horizontalTraverse": "The declared traverse chapter maps local progress to a multi-viewport horizontal track and the corresponding camera path.",
+    "interpolation": [
+      "cameraPosition",
+      "cameraLookAt",
+      "sceneMaterial",
+      "geometryMorph",
+      "particleOpacity",
+      "contentOpacity",
+      "horizontalTrack"
+    ],
+    "restore": "Refresh, resize, locale change, and reverse scroll reconstruct the same semantic chapter from document position."
+  },
+  "layers": [
+    { "id": "world", "role": "fixed WebGL terrain, river, particles, atmosphere, and semantic transforms", "depth": 0 },
+    { "id": "chapter-media", "role": "photographic fields, masks, grids, and archival surfaces", "depth": 20 },
+    { "id": "editorial", "role": "chapter headings, explanatory copy, data, captions, and evidence", "depth": 40 },
+    { "id": "utility", "role": "route progress, map, locale, focus, and accessibility controls", "depth": 60 }
+  ],
+  "inputs": {
+    "wheel": "Uses native vertical page scroll. A smoothing adapter may interpolate position but must not create a second scroll owner.",
+    "touch": "Keeps native vertical momentum and reading order; the horizontal traverse is still driven by vertical document progress.",
+    "keyboard": "PageUp, PageDown, arrows, Home, End, Tab, and Escape retain native or clearly labeled behavior.",
+    "pointer": "Optional bounded parallax may enrich depth but cannot block selection, links, or semantic progression."
+  },
+  "transitions": {
+    "sourceToTraverse": {
+      "rule": "The source trajectory end equals the traverse trajectory start for both camera position and look-at target.",
+      "desktopEntryWindow": 0.16,
+      "mobileEntryWindow": 0.2,
+      "smoothing": "Position and gaze use delta-time damping after interpolation.",
+      "failure": "Any one-frame camera, gaze, background, or chapter-content jump at the boundary."
+    },
+    "verticalToHorizontal": {
+      "rule": "Track translation and 3D traversal share the same chapter-local progress and ease family.",
+      "failure": "The track stalls, jumps, or moves independently from the world."
+    },
+    "reversibility": "All transitions must produce the corresponding previous state when scrolling backward."
+  },
+  "compositionSequence": [
+    "intro-field",
+    "source-image-to-terrain",
+    "horizontal-spatial-traverse",
+    "coordinate-archive",
+    "editorial-species-index",
+    "particle-weather-field",
+    "light-geographic-plate",
+    "cyclical-return"
+  ],
+  "responsive": {
+    "desktop": "Uses broad overlap, large type, photographic slices, and a long horizontal traverse with an independently authored camera path.",
+    "mobile": "Linearizes reading order, reduces subject travel, repositions images below primary copy, and uses a separate camera boundary and traverse path.",
+    "breakpointPolicy": "Interpolate inside each layout mode and switch between separately authored desktop and mobile states at a declared breakpoint."
+  },
+  "reducedMotion": {
+    "behavior": "Disable the smoothing controller and continuous decorative time motion; map scroll directly to stable semantic states with short or absent opacity blends.",
+    "required": "Every heading, paragraph, fact, caption, route control, and chapter remains reachable and understandable."
+  },
+  "contentSlots": [
+    "project-title",
+    "intro-copy",
+    "seven-chapter-copy",
+    "four-traverse-panels",
+    "chapter-facts",
+    "route-labels",
+    "two-locales"
+  ],
+  "assetSlots": [
+    { "id": "source-image", "required": true, "role": "texture used by the 2D-to-3D terrain morph" },
+    { "id": "traverse-image", "required": true, "role": "photographic evidence inside the horizontal traverse" },
+    { "id": "closing-image", "required": true, "role": "late-story geographic or contextual image" },
+    { "id": "favicon", "required": false, "role": "project identity mark" },
+    { "id": "brand-fonts", "required": false, "role": "user-supplied licensed typography" }
+  ]
+}

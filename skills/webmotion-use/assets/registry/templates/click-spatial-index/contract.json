@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "template": "click-spatial-index",
+  "experienceSpec": "E09",
+  "identity": {
+    "category": "non-scroll-spatial-navigation",
+    "informationGoal": "Let readers browse hierarchical spaces directly when sequence is less important than location and comparison.",
+    "composition": "A full-screen workspace contains floor tabs, an exploded building model, room pins, and a synchronized record panel.",
+    "interaction": "Click or keyboard selection chooses a floor and room. Selection updates model emphasis, camera framing, pins, and the DOM record in place.",
+    "semantic3d": "The building model preserves floor and room relationships while selection reveals one record without losing spatial context."
+  },
+  "invariants": [
+    "Scroll never acts as the primary navigation input.",
+    "Floor and room hierarchy is explicit in DOM controls.",
+    "Model, pins, and information panel update in one selection transaction.",
+    "The selected room remains spatially contextualized.",
+    "Mobile places the model above a touch-friendly room list and record.",
+    "Reduced motion switches selection without camera travel."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [],
+    "selectionItems": [
+      "L1-A",
+      "L1-B",
+      "L2-A",
+      "L2-B",
+      "L3-A",
+      "L3-B"
+    ]
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "No semantic mapping; the desktop workspace fits the viewport.",
+    "touch": "Touch selects floor and room controls.",
+    "keyboard": "Every floor and room is reachable with standard buttons.",
+    "pointer": "Click selection owns navigation."
+  },
+  "responsive": {
+    "desktop": "Model and record panel share a single workspace viewport.",
+    "mobile": "Model, floor tabs, room pins, and record serialize vertically."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

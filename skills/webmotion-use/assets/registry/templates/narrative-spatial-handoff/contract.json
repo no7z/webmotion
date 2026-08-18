@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "template": "narrative-spatial-handoff",
+  "experienceSpec": "E06",
+  "identity": {
+    "category": "narrative-to-spatial-index",
+    "informationGoal": "Build enough context through narrative progression, then let readers directly select places, records, or nodes.",
+    "composition": "A typographic longform story occupies the first act. A clear threshold introduces a separate full-screen spatial index with hotspots and a record panel.",
+    "interaction": "Native scroll owns the story. After an explicit handoff, pointer and keyboard selection own the spatial index; further scrolling does not change selection.",
+    "semantic3d": "The globe encodes geographic distribution and makes selected records spatially comparable."
+  },
+  "invariants": [
+    "The narrative visibly concludes before the index accepts spatial selection.",
+    "Scroll does not silently continue controlling the index.",
+    "Every hotspot has an equivalent DOM button and record.",
+    "Selection updates the globe and information panel together.",
+    "Mobile serializes the globe, hotspot list, and record panel.",
+    "Reduced motion keeps selection usable with a static globe pose."
+  ],
+  "stateModel": {
+    "owner": "experience-state",
+    "deterministic": "The same progress or selection input must reconstruct the same information and visual state.",
+    "states": [
+      "01",
+      "02",
+      "03"
+    ],
+    "selectionItems": [
+      "N-01",
+      "B-04",
+      "Y-12",
+      "E-09"
+    ]
+  },
+  "layers": [
+    {
+      "id": "base",
+      "role": "page atmosphere and ordinary media",
+      "depth": 0
+    },
+    {
+      "id": "spatial",
+      "role": "declared spatial information carrier",
+      "depth": 20
+    },
+    {
+      "id": "editorial",
+      "role": "headings, records, captions, facts, and controls",
+      "depth": 40
+    },
+    {
+      "id": "utility",
+      "role": "navigation, language, progress, and accessibility controls",
+      "depth": 60
+    }
+  ],
+  "inputs": {
+    "wheel": "Native scroll progresses only the narrative act.",
+    "touch": "Native touch progresses the story and then the serialized index.",
+    "keyboard": "Hotspot buttons and records are fully keyboard accessible.",
+    "pointer": "Click selection owns the index after handoff."
+  },
+  "responsive": {
+    "desktop": "Globe and active record share the index viewport.",
+    "mobile": "The globe becomes an upper visual region followed by the hotspot list and selected record."
+  },
+  "reducedMotion": {
+    "behavior": "Disable smoothing and continuous ambient travel; expose stable states or direct selection.",
+    "required": "All headings, records, controls, and conclusions remain available."
+  },
+  "provenance": "Original WebMotion contract and demonstration adapter based on observable interaction mechanics only. No reference-site source code, assets, copy, fonts, models, or brand identity are included."
+}

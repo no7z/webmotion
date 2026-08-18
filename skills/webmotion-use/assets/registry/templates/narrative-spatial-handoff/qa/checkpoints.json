@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "template": "narrative-spatial-handoff",
+  "requiredGates": [
+    {
+      "id": "composition-identity",
+      "question": "Does the page preserve the narrative-to-spatial-index composition rather than falling back to a generic split screen?",
+      "test": "Compare the running desktop and mobile page with contract.identity.composition."
+    },
+    {
+      "id": "interaction-identity",
+      "question": "Does Native scroll owns the story. After an explicit handoff, pointer and keyboard selection own the spatial index; further scrolling does not change selection.",
+      "test": "Exercise forward, reverse, fast, slow, pointer, touch, and keyboard input where applicable."
+    },
+    {
+      "id": "information-first",
+      "question": "Does readable DOM information remain the primary outcome?",
+      "test": "Disable WebGL or media and verify headings, records, facts, and navigation remain understandable."
+    },
+    {
+      "id": "semantic-spatial-role",
+      "question": "Does every spatial state perform the declared information job?",
+      "test": "Map each visual state or selection to the claim it explains."
+    },
+    {
+      "id": "unobstructed-content",
+      "question": "Are important text and controls readable at every transition and selection?",
+      "test": "Inspect 1440x900, 1280x720, 390x844, and 360x800."
+    },
+    {
+      "id": "mobile-recomposition",
+      "question": "Is mobile deliberately reconstructed rather than scaled down?",
+      "test": "Compare content order, visual framing, controls, and protected copy zones."
+    },
+    {
+      "id": "reduced-motion",
+      "question": "Is every information result available with reduced motion enabled?",
+      "test": "Emulate prefers-reduced-motion and traverse or select every state."
+    }
+  ],
+  "runtime": [
+    "No console errors or missing assets.",
+    "No horizontal document overflow.",
+    "No jump, flash, or stale frame at boundaries.",
+    "Refresh and resize preserve a valid semantic state.",
+    "Native browsing input is not trapped."
+  ],
+  "performance": {
+    "desktop": "No sustained jank during the primary interaction.",
+    "mobile": "Use DPR cap and preserve native touch momentum.",
+    "assetFailure": "Fallback content remains readable."
+  }
+}

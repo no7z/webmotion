@@ -7,7 +7,11 @@ import { fileURLToPath } from "node:url";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "../../..");
-const registryRoot = path.join(projectRoot, "registry");
+const checkoutRegistryRoot = path.join(projectRoot, "registry");
+const bundledRegistryRoot = path.resolve(scriptDir, "../assets/registry");
+const registryRoot = fs.existsSync(path.join(checkoutRegistryRoot, "index.json"))
+  ? checkoutRegistryRoot
+  : bundledRegistryRoot;
 const indexFile = path.join(registryRoot, "index.json");
 const [command = "help", id, ...rawOptions] = process.argv.slice(2);
 
